@@ -1,0 +1,158 @@
+<HEader>
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DIGITAL VIVA</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+  </head>
+  
+  </HEader>
+  <nav>
+    
+  <style>
+    .custom-navbar{
+      background-color:white;
+    }
+  
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+  text-decoration: none;
+  
+  }
+  
+  
+  #backButton{width: 55px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(178, 146, 208);
+  
+  
+  
+  }
+  
+  </style>
+  
+  <body>
+    
+  <nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+  
+        </td>
+        <td>
+          <a href="perfil2.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+  </nav>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<style>
+body{background: linear-gradient(to right, #c3a8eb,#126cd2);
+    width: 100%;
+}
+
+.icone3{
+    width: 30%;
+   
+}
+
+.texto321{
+    text-align: center;
+  font-family: 'Open Sans';font-size:  20px;
+  
+  
+}
+</style>
+
+    
+<center>
+    <p>
+        <img src="../img1/historico2.png" class="icone3" alt="">
+    </p>
+    <p class="texto321">Você não tem novos históricos...</p>
+</center>
+        
+ 
+
+<script>
+    
+
+
+    function toggleColorPicker() {
+        var colorPicker = document.getElementById("colorPicker");
+        colorPicker.style.display = (colorPicker.style.display === "none" || colorPicker.style.display === "") ? "block" : "none";
+    }
+    
+    function changeColor(color) {
+        // Lógica para mudar a cor conforme necessário
+        document.body.style.backgroundColor = color;
+    }
+    
+    function changeGradient() {
+        // Lógica para mudar para um gradiente, se necessário
+        document.body.style.background = "linear-gradient(to right, white, orange, yellow, green, blue, indigo, violet)";
+    }
+    
+    
+        </script>
+    
+        <script>
+         document.addEventListener('DOMContentLoaded', function() {
+        // Configuração inicial para o linear-gradient
+        document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+    });
+    
+    function changeGradient() {
+        document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+    }
+    
+    function changeColor(color) {
+        document.body.style.background = color;
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Carrega a cor salva no localStorage ao carregar a página
+        const savedColor = localStorage.getItem('selectedColor');
+        if (savedColor) {
+            document.body.style.background = savedColor;
+        }
+    });
+    
+    function changeGradient() {
+        const gradient = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+        document.body.style.background = gradient;
+        // Salva a cor no localStorage
+        localStorage.setItem('selectedColor', gradient);
+    }
+    
+    function changeColor(color) {
+        document.body.style.background = color;
+        // Salva a cor no localStorage
+        localStorage.setItem('selectedColor', color);
+    }
+        </script>
+
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

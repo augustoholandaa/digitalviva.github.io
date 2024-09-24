@@ -1,0 +1,301 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Episódio 1</figcaption>
+        <audio controls>
+            <source src="../img/EPI.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    
+</div>
+
+
+<center><div class="divtexto">
+
+    <h2>O que é EPI</h2>
+    <br>
+
+    <p>EPI significa Equipamento de Proteção Individual. São equipamentos e acessórios desenvolvidos para proteger</p>
+    <p>uma parte do corpo ou o indivíduo todo contra riscos específicos.</p>
+    <p>De acordo com a NR 6, a definição de EPI seria: “todo dispositivo ou produto de uso individual utilizado pelo</p>
+    <p> trabalhador que tem como finalidade protegê-lo de riscos ou ameaças à segurança e à saúde”.</p>
+    <p>Dessa forma, entram na lista dos EPIs itens como:</p>
+    <p>◉ Óculos de proteção;
+    <p>◉ Luvas</p>
+    <p>◉ Capacetes;</p>
+    <p>◉ Protetores auriculares;</p>
+    <p>◉ Máscaras;</p>
+    <p>◉ Abafadores de som;</p>
+    <p>◉ Cintos de segurança;</p>
+    <p>Equipamentos de segurança para alturas.</p>
+    <p>Há ainda outros EPIs, sendo que cada função ou cada tipo de risco necessita de equipamentos próprios.</p>
+        <br>
+    <h2>Qual a importância do uso dos EPI's</h2>
+    
+    <p>Depois de entender o que é EPI, também é preciso entender sua importância.</p>
+    <p>Os Equipamentos de Proteção Individual são capazes de prevenir grande parte dos acidentes de trabalho e doenças ocupacionais.</p>
+    <p>Eles tornam a empresa mais segura tanto para empregados quanto para empregadores,</p> 
+    <p>já que, dentro do local de trabalho, acidentes podem acontecer com qualquer pessoa.</p>
+    <p>Além disso, a empresa que não fornece e não fiscaliza a utilização de EPIs,</p>
+    <p>está descumprindo os termos da NR 6, ficando sujeita a multas e processos judiciais.</p>
+    <p>Preocupar-se com a saúde e segurança das pessoas é a melhor forma de garantir que o trabalho</p> 
+    <p>continuará acontecendo com o mínimo possível de imprevistos.</p>
+        <br>
+    <h2>Quais os riscos de não utilizar EPIs?</h2>
+
+    <p>Em primeiro lugar, o principal risco da não utilização de EPIs é a abertura que se dá aos acidentes de trabalho.</p>
+    <p>Acidentes de trabalho podem incapacitar o colaborador temporária ou permanentemente,</p> 
+    <p>gerando afastamento ou, nos casos mais graves, aposentadoria por invalidez.</p>
+    <p>Além disso, diversas empresas possuem riscos que agravam a saúde dos colaboradores gradativamente.</p>
+    <p>É o caso de empresas onde há muito ruído (que pode levar à surdez) ou agentes químicos</p> 
+    <p>(que podem causar problemas respiratórios e várias outras doenças).</p>
+    <p>Somente a utilização de EPIs pode minimizar o risco de o colaborador desenvolver uma doença em decorrência do trabalho.</p>
+    <p>Por isso, entender o que é EPI e quais os riscos de não utilizá-los é primordial para todo gestor.</p>
+        <br>
+    <h2>Vantagens de utilizar EPIs?</h2>
+    
+    <p>◉ O ambiente de trabalho se torna mais saudável para todos os envolvidos, e o número de acidentes diminui drasticamente.</p>
+    <p>◉ Além disso, também aumenta a satisfação dos colaboradores, que se sentem mais aptos e têm menos reclamações</p>
+    <p>◉ Por fim, a qualidade de vida melhora de forma geral, trazendo bem-estar, saúde e segurança a todos os setores da empresa.</p>
+
+
+    <br><br><br><br><br>
+    <footer><center>fontes: <a href="https://clinimedjoinville.com.br/o-que-e-epi-e-qual-a-importancia-de-sua-utilizacao/">Link</a></center></footer>
+</center></div>
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

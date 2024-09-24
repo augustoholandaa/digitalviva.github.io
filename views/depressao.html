@@ -1,0 +1,433 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Episódio 1</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - 1 episódio o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Episódio 2</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - 2 episódio o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Último Episódio</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - último episódio de o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+</div>
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Episódio 1</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - 1 episódio o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Episódio 2</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - 2 episódio o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Último Episódio</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - último episódio de o que é depressão.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+</div>
+
+
+
+    
+       
+    
+
+<center><div class="divtexto">
+
+    <h2>O que é Depressão?</h2>
+    <br>
+    <p>A depressão é uma doença psiquiátrica crônica que causa oscilações de humor caracterizadas por perda de interesse, ausência de ânimo e tristeza profunda. A depressão é uma doença psiquiátrica crônica que causa oscilações de humor caracterizadas por perda de interesse, ausência de ânimo e tristeza profunda. Segundo a Organização Mundial da Saúde, a doença atinge mais de 300 milhões de pessoas de todas as idades no mundo. No Brasil, a estimativa é que 5,8% da população seja afetada pela doença.</p>
+    <br>
+    <h2>Tristeza e Depressão</h2>
+    <br>
+    <p>Há uma grande diferença entre tristeza e depressão. A tristeza pode ocorrer desencadeada por algum fato do cotidiano, em que a pessoa realmente sofre com aquilo até assimilar o que está acontecendo e geralmente não dura mais do que quinze a vinte dias. Por sua vez, a depressão se instala e se não for tratada pode piorar e passar por três estágios: leve, moderada e grave.</p>
+    <p>A depressão em nível leve geralmente pode ser controlada sem medicamentos, sendo tratada com terapia e exercícios físicos, por exemplo. Já os níveis moderado e grave têm o auxílio de medicamentos para amenizar os sintomas da depressão, além da terapia e outras opções para melhorar a qualidade de vida do paciente, prescritas por psicólogos e psiquiatras.</p>
+    <br>
+    <h2>Diferença entre Ansiedade e Depressão</h2>
+    <br>
+    <p>A ansiedade é marcada por inquietação, sensação de pressa, urgência. De acordo com a psicóloga Luciana Kotaka, ela pode ser um distúrbio quando ocorre em momentos que não se justificam ou quando é tão intensa ou duradoura que acaba interferindo com as atividades normais da pessoa.</p>
+    <p>Já depressão, por outro lado, é uma doença do organismo como um todo, comprometendo o físico, o humor e o pensamento, explica a especialista . Nessa condição forma de ver e sentir a realidade são alteradas, modificando as emoções, a disposição, a alimentação, sono, até mesmo como se sente em relação a si mesmo.</p>
+    <br>
+    <h2>Causas</h2>
+    <br>
+    <h2>Depressão é doença?</h2>
+    <br>
+    <p>A depressão envolve uma ampla família de doenças, por isso é denominada como síndrome e, então, classificada como doença psiquiátrica crônica. Há uma série de evidências que mostram alterações químicas no cérebro do indivíduo deprimido, principalmente com relação aos neurotransmissores (serotonina, noradrenalina e, em menor proporção, dopamina), substâncias que transmitem impulsos nervosos entre as células. Outros processos que ocorrem dentro das células nervosas também estão envolvidos.</p>
+    <br>
+    <h2>O que provoca a depressão?</h2>
+    <br>
+    <p>Ao contrário do que normalmente se pensa, os fatores psicológicos e sociais, muitas vezes, são consequência e não causa da depressão, considerada por muitos como o "Mal do século". Vale ressaltar que o estresse pode precipitar a depressão em pessoas com predisposição, que provavelmente é genética. A prevalência (número de casos numa população) da depressão é estimada em 19%, o que significa que aproximadamente uma em cada cinco pessoas no mundo apresenta o problema em algum momento da vida.</p>
+    <br>
+    <h2>Tipos</h2>
+    <br>
+    <p>Existem diversos tipos de distúrbios de depressão. Os mais comuns são:</p>
+    <br>
+    <h2>Episódio Depressivo</h2>
+    <br>
+    <p>Um episódio depressivo costuma ser classificado como um período de tempo em que a pessoa apresenta uma alteração em seu comportamento. Os principais sintomas são:</p>
+    <p> - Tristeza.</p>
+    <p> - Falta de energia.</p>
+    <p> - Falta de iniciativa.</p>
+    <p> - Falta de prazer.</p>
+    <p> - Alteração do sono.</p>
+    <p> - Alteração do apetite.</p>
+    <p> - Pensamento lento.</p>
+    <p> - Funções motoras mais lentas.</p>
+    <p>Estes quadros tendem a ter uma duração mais curta, de até seis meses, sem uma intensificação dos sintomas.</p>
+    <br>
+    <h2>Depressão profunda (Transtorno depressivo maior)</h2>
+    <br>
+    <p>Se uma pessoa começa a ter quadros depressivos recorrentes ou mantém os sintomas de depressão por mais de seis meses com uma intensificação do quadro, pode-se considerar que ela esteja passando por uma depressão profunda (ou transtorno depressivo maior).</p>
+    <p>Normalmente, o transtorno depressivo maior é um quadro mais grave e também tem grande relação com a herança genética. Nele há uma mudança química no funcionamento do cérebro, que pode ser desencadeada por uma causa física ou emocional.</p> 
+    <br>
+    <h2>Depressão Bipolar</h2>
+    <br>
+    <p>As fases de depressão dentro do transtorno bipolar também são consideradas um subtipo de depressão. Os sintomas apresentados na fase de tristeza são os mesmos de um episódio depressivo. Já nas fases de euforia, o paciente pode apresentar sintomas como:</p>
+    <p>- Agitação.</p>
+    <p>- Ocupação com diversas atividades.</p>
+    <p>- Obsessão com determinados assuntos.</p>
+    <p>- Aumento de impulsividade.</p>
+    <p>- Aumento de energia.</p>
+    <p>- Desatenção.</p>
+    <p>- Hiperatividade.</p>  
+    <br>
+    <h2>Distimia</h2>
+    <br>
+    <p>A distimia é uma forma crônica de depressão, porém, menos grave do que a forma mais conhecida da doença. Com a distimia, os sintomas de depressão podem durar um longo período de tempo — muitas vezes, dois anos ou mais. O paciente com distimia costuma:</p>
+    <p>- Perder o interesse nas atividades diárias normais.</p>
+    <p>- Sentir-se sem esperança.</p>
+    <p>- Ter baixa produtividade.</p>
+    <p>- Ter baixa autoestima.</p>
+    <p>- Sentir-se inadequado.</p>
+    <p>- Ser excessivamente crítico.</p>
+    <p>- Reclamar constantemente.</p>
+    <p>- Ser incapaz de se divertir</p>
+    <br>
+    <h2>Depressão Atípica</h2>
+    <br>
+    <p>No geral, os quadros de depressão atípica costumam ser melancólicos, em que o paciente apresenta principalmente tristeza e pensamentos de morte, desesperança e inutilidade. Há ainda o predomínio de falta de energia, cansaço, aumento excessivo de sono e o humor apático.</p>
+    <br>
+    <h2>Depressão Sazonal</h2>
+    <br>
+    <p>O maior exemplo de depressão sazonal são os episódios de tristeza relacionados ao inverno, que ocorrem devido à baixa exposição à luz solar. Existem outros tipos de depressões sazonais, ligadas às épocas do ano. Por exemplo, durante as festas de final de ano em que os níveis de estresse acabam aumentando devido a pensamentos de promessas não cumpridas durante o ano e ansiedade por um novo período a vir. Fique atento com períodos de tristeza e de desânimo que acontecem em épocas específicas - sempre que está frio ou sempre próximo de uma data, por exemplo.</p>
+    <br>
+    <h2>Depressão Pós-Parto</h2>
+    <br>
+    <p>A depressão pós-parto ocorre logo após o nascimento do bebê, em que os sintomas incluem tristeza e desesperança. Muitas novas mães experimentam alterações de humor e crises de choro após o parto, que se desvanecem rapidamente. Essas mudanças de humor acontecem principalmente devido às alterações hormonais decorrentes do término da gravidez. No entanto, algumas mães experimentam esses sintomas com mais intensidade, dando origem à depressão pós-parto.</p>
+    <br>
+    <h2>Depressão Psicótica</h2>
+    <br>
+    <p>A depressão psicótica alia os sintomas de tristeza a outros menos típicos, como delírios e alucinações. Este é considerado um tipo de depressão grave, mas costuma ser raro. No entanto, qualquer pessoa pode desenvolvê-lo e não só quem tem histórico de psicopatia na família.</p>
+    <br>
+    <h2>Depressão na Adolescência</h2>
+    <br>
+    <p>A depressão na adolescência é caracterizada pelos mesmos sintomas da depressão profunda. A única e importante diferença é que normalmente, no lugar da tristeza, costumam apresentar irritabilidade.</p>        
+    <p>No Brasil, cerca de 20% dos adolescentes entre 14 e 15 anos apresentavam depressão leve a moderada; e quase 9%, depressão grave. Já entre os jovens de 16 e 17 anos o número de depressão grave aumenta (17,1%). E 13,5% têm depressão leve a moderada. A depressão grave costuma ser mais comum em adolescentes com ansiedade, abuso de drogas, além de transtorno de déficit de atenção e hiperatividade. Muitos pais acham que certas atitudes podem ser rebeldia e não sintomas de depressão na adolescência, como resistência em fazer tarefas, dificuldade em estudar e permanência excessiva no quarto.</p>
+    <p>É recomendável que a família procure orientação psiquiátrica para que seja feito um diagnóstico preciso sobre o adolescente e a possibilidade de depressão. Se seu filho ou filha adolescente apresenta depressão, especialistas indicam aos pais para se manterem abertos a conversas e interessados em saber do dia a dia dele ou dela.</p>
+    <br>
+    <h2>Depressão Infantil</h2>
+    <br>
+    <p>A depressão infantil é bastante semelhante à depressão na adolescência, tendo como sintomas mais comuns a irritabilidade, perda de interesse, mau humor, tristeza e isolamento. Além dos fatores também comuns a adultos que podem levar à depressão, crianças também apresentam algumas outras causas que potencializam a doença:</p>
+    <p>- Sofrer maus tratos domésticos.</p>
+    <p>- Ser vítima de bullying.</p>
+    <p>- Pertencer a minorias sexuais.</p>
+    <p>- Ser rejeitado por algum familiar ou amigo.</p>
+    <p>Contudo, pesquisas mostram que muitas crianças que tendem a praticar bullying também sofrem de depressão; e que uma relação afetiva calorosa com os pais diminui drasticamente à predisposição à doença.</p>
+    <p>Os pais ou responsáveis devem procurar um médico psiquiátrico quando a criança apresentar principalmente:</p>
+    <p>- Tristeza profunda ou prolongada.
+    <p>- Desânimo persistente.
+    <p>- Dificuldade para realizar atividades que gostava antes.
+    <p>- Alterações de apetite e sono.
+    <p>- Frases muito pessimistas.
+    <p>- Dificuldade de concentração e atenção.</p>
+    <p>Ao desconfiar de que há algo de diferente com a criança, procure um médico.</p>
+    <br>
+    <h2>Depressão na menopausa</h2>
+    <br>
+    <p>A depressão na menopausa nem sempre é associada à tristeza, choro compulsivo e desinteresse. Isso porque, nesta fase da vida da mulher, o transtorno depressivo costuma causar irritabilidade, cansaço, desamparo ou até mesmo por meio de outras doenças, como vaginite, gripe, herpes, gastrite e cefaleia. Mulheres entre 35 e 50 anos, portanto, têm mais riscos de apresentarem depressão devido ao período de grandes alterações hormonais devido à chegada da menopausa. Essas mudanças podem ocasionar abalos emocionais e físicos, resultando na doença. Vale ressaltar que a chamada "transição menopausal" é dividida em:</p>
+    <p>- Perimenopausa: declínio da função ovariana até um ano após a menopausa.</p>
+    <p>- Menopausa: término da atividade ovulatória folicular e um ano de amenorréia, ou seja, sem menstruar.</p>
+    <p>- Pós-menopausa: a partir de um ano sem menstruar.</p>
+    <p>Além das alterações hormonais, há outros fatores específicos em mulheres que podem desencadear uma depressão, como:</p>
+    <p>- Relacionamento conjugal desgastado ou rompido.</p>
+    <p>- Apego excessivo na criação dos filhos.</p>
+    <p>- Histórico de depressão ou outros transtornos psiquiátricos na família.</p>
+    <p>- Doenças clínicas.</p>
+    <p>- Baixa condição socioeconômica.</p>
+    <p>- Baixa escolaridade.</p>
+    <p>- Perda precoce dos pais</p>
+    <br>
+    <h2>Diagnóstico</h2>
+    <br>
+    <h2>Como identificar a depressão?</h2>
+    <br>
+    <p>É comum que as pessoas tenham a dúvida sobre como saber que possuem depressão. Para saber a resposta disso, é recomendada a procura por um profissional especializado. O diagnóstico é feito com base nos sintomas apresentados, em como a pessoa se apresenta fisicamente e emocionalmente no momento e em uma breve análise do seu histórico de vida e familiar. Além disso, a depressão é classificada de acordo com a sua intensidade — leve, moderada ou grave. Portanto, o especialista precisa fazer uma avaliação para entender que condições te levam a ter depressão e como amenizá-la.</p>
+    <br>
+    <h2>Buscando ajuda médica</h2>
+    <br>
+    <p>É perfeitamente normal sentir-se triste, chateado ou infeliz com situações estressantes da vida. Contudo, pessoas com depressão experimentam essas sensações constantemente durante por anos. Isso pode interferir nos relacionamentos, trabalho e atividades diárias. Se você apresenta os sintomas de depressão e acredita que isso esteja atrapalhando suas atividades e modo de vida, busque ajuda. Se não tratada efetivamente, a depressão pode progredir para algo mais grave, como as tentativas de suicídio.</p>
+    <p>Desabafo em total sigilo. Se você tem percebido alguns sintomas de depressão, também pode buscar ajuda com o CVV – Centro de Valorização da Vida. Através do telefone 188 você pode conversar em completo sigilo, tendo apoio emocional por voluntários da entidade. Se preferir, pode desabafar diretamente pelo chat ou preenchendo um formulário do site.</p>
+    <br><br><br><br><br>
+    <p><footer><center>fontes: <a href="https://www.minhavida.com.br/saude/temas/depressao" > </p>
+        <p>Link</a></center></footer></p>
+    </center></div>
+
+    <script>
+        function toggleAudioPlayer() {
+         var audioPlayer = document.getElementById("audioPlayer");
+         audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+     }
+     
+     </script>
+     
+     
+     
+     <script>
+       function toggleModo() {
+         var body = document.body;
+         body.classList.toggle("dark-mode");
+         atualizarIcone();
+     }
+     
+     function atualizarIcone() {
+         var modoToggle = document.getElementById("modoToggle");
+         var body = document.body;
+     
+         // Use um ícone de lua para representar o modo noturno
+         var iconeLua = "🌜";
+     
+         // Use um ícone de sol para representar o modo diurno
+         var iconeSol = "🌞";
+     
+         // Alterne entre os ícones com base no modo atual
+         modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+     }
+     
+     </script>
+     
+     
+     <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    </footer>

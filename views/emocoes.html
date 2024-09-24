@@ -1,0 +1,357 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Episódio 1</figcaption>
+        <audio controls>
+            <source src="../img/Emoções 1.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Episódio 2</figcaption>
+        <audio controls>
+            <source src="../img/Emoções 2.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Último Episódio</figcaption>
+        <audio controls>
+            <source src="../img/Emoções 3.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+</div>
+
+<center><div class="divtexto">
+
+    <h2>Como lidar com as emoções?</h2>
+    <p>Raiva, medo, alegria, tristeza… Você provavelmente experimenta muitos estados emocionais diferentes ao longo de um dia, não é? Entretanto, você sabe como lidar com as emoções?</p>
+    <p>Se você tem dificuldade nesta tarefa, fique tranquilo! Administrar nossas emoções é uma atividade complexa. Em especial, aquelas negativas, que nos causam sofrimento e mal-estar. Afinal, não é nada confortável ficar triste ou ansioso.</p>
+    <p>Por vezes, no contato com essas emoções negativas, desenvolvemos mecanismos de enfrentamento pouco adaptativos. Podemos, por exemplo, comer excessivamente em uma tentativa de afastar a ansiedade. Ou fugir da vivência dessas estimulações desconfortáveis, assistindo à televisão por horas ou navegando nas redes sociais.</p>
+    <p>No entanto, tudo isso pode ser manejado de um modo mais funcional. Podemos conviver com todo o colorido emocional que a vida proporciona. Sentir alegria com nossas conquistas, e a tristeza com as dificuldades do caminho, sem que essas emoções se intensifiquem de modo a nos atrapalhar.</p>
+    <p>Neste artigo, você vai entender melhor como lidar com as suas emoções. Explicaremos o que são as emoções, inteligência emocional e a importância de trabalhá-las. Além, é claro, de listarmos algumas dicas para você manejar melhor as suas emoções. Confira!</p>
+    <br>
+    <h2>O que é Emoção?</h2>
+    <p>Em Psicologia Comportamental, o psicólogo Luciano S. Leite define a emoção da seguinte forma:</p>
+    <p>“A palavra emoção tem origem na expressão latina emotio e significa uma alteração forte, mas breve no estado de ânimo. A emoção pode ser uma sensação positiva e agradável ou negativa e desagradável. Para a Psicologia, as emoções representam reações físicas e psicológicas do organismo para que ele se adapte às mudanças no ambiente e situações” (LEITE, 2020, p.92; destaque nosso).</p>
+    <p>O autor ainda acrescenta que as emoções provocam diferentes formas de respostas nas pessoas, por meio de expressões faciais, tonalidades da voz, respiração, relaxamento ou enrijecimento muscular.</p>
+    <p>Além disso, elas podem orientar o foco dos pensamentos e guiar os nossos comportamentos. Um exemplo é o que citamos na abertura deste texto: responder a um estado de tristeza por meio da fuga, navegando na internet por horas ou maratonando uma série.</p>
+    <p>Leite também divide as emoções em primárias e secundárias:</p>
+    <p><h2>Emoções Primárias:</h2>São as mais comuns, inatas e ligadas à necessidade de sobreviver. Exemplos: raiva, alegria, medo e tristeza;</p>
+    <p><h2>Emoções Secundárias:</h2>São mais complexas por envolver combinações entre emoções primárias e situações derivadas do ambiente ou dos relacionamentos. Exemplos: vergonha, culpa, ciúme, inveja e ansiedade.</p>
+    <br>
+    <h2>O que é Lidar com as Emoções?</h2>
+    <p>Lidar com as emoções envolve:</p>
+    <p>1.Identificar o que você sente;</p>
+    <p>2.Validar e expressar a emoção;</p>
+    <p>3.Entender o contexto.</p>
+    <p>Compreenda a seguir cada característica:</p>
+    <br>
+    <h2>1. Identificar o que você sente</h2>
+    <p>Primeiramente, lidar com as emoções envolve saber identificar e rotular o que você sente. Esta etapa é muito importante e, por vezes, é negligenciada. Em nossa educação formal, na maioria dos casos, não temos espaço para aprender sobre as emoções e, muito menos, para falar sobre elas.</p>
+    <p>Assim, frequentemente, crescemos sem um repertório emocional. Isto é, experimentamos essas estimulações e não sabemos colocá-las em palavras. Sem nomear a experiência, fica mais difícil de lidar com ela e também de obter ajuda. Ao mesmo tempo, expressá-la de modo saudável fica mais complicado.</p>
+    <br>
+    <h2>2. Validar e Expressar a Emoção</h2>
+    <p>Em seguida, é importante você validar seu estado emocional, sem se culpar por senti-lo. Depois, expressar de modo adequado suas emoções. Na parte final deste artigo, entraremos em detalhes sobre como instrumentalizar isso.</p>
+    <p>Muitas vezes, por fatores culturais, certas manifestações emocionais são bloqueadas. Isso contribui para o adoecimento psíquico. É o que contam os autores Ana Mercês Bahia Bock, Odair Furtado e Maria de Lourdes Trassi Teixeira no livro Psicologias – Uma introdução ao estudo de psicologia. Observe:</p>
+    <p>“A cultura ‘escolhe’ algumas formas como sendo mais adequadas a determinadas situações ou tipo de pessoas, por exemplo, de acordo com a idade, o sexo ou a posição social. No processo de socialização, aprendemos essas formas de expressão das emoções aceitas pelo grupo a que pertencemos. Desde muito pequeno dizemos para o menino ‘homem não chora’, então, ele aprende e passa a ter um modo de se comportar mesmo em situações de dor e sofrimento intenso; ou seja, ele aprenderá a conter, a não expressar suas emoções ou procurará outras formas de expressão para elas” (BOCK, FURTADO & TEIXEIRA, 2018, p.509; destaque nosso).</p>
+    <br>
+    <h2>3. Entender o Contexto</h2>
+    <p>Além da identificação e expressão, o manejo das emoções também envolve buscar entender o que aconteceu, o que o levou a experimentar tal estado emocional. Com frequência, apenas sentimos as emoções, sem tentar entender os eventos ou ideias que as originaram.</p>
+    <p>Por fim, sabe-se que as emoções podem influenciar os nossos pensamentos e comportamentos. Assim, é importante administrá-las, e tentar compreender se elas estão guiando as nossas decisões.</p>
+    <br>
+    <h2>Por que é importante lidar com as emoções?</h2>
+    <p>Lidar com as emoções de uma maneira funcional é importante principalmente para uma melhor qualidade de vida. Por exemplo, se você reconhece que as emoções negativas estão muito intensas e duradouras no seu dia a dia, gerando prejuízo significativo para a sua vida, você pode procurar ajuda especializada. Assim, pode se reequilibrar. Nesta seleção de livros para ansiedade, você fica por dentro de como lidar melhor com esta emoção.</p>
+    <p>A OMS (Organização Mundial da Saúde) define saúde mental como um estado de bem-estar psicológico que permite às pessoas lidar com o estresse da rotina, perceber suas capacidades, aprender e trabalhar bem, e contribuir com as suas comunidades. Desse modo, o manejo adequado das emoções é um componente importante para a saúde mental. </p>
+    <br>
+    <h2>O que é Inteligência Emocional?</h2>
+    <p>Na atualidade, quando se fala em lidar com as emoções, muitas vezes, acabamos esbarrando na expressão inteligência emocional. O psicólogo Luciano S. Leite explica o termo da seguinte forma: “O termo inteligência emocional refere-se à capacidade de saber reconhecer e administrar as próprias emoções” (LEITE, 2020, p.78; destaque nosso)</p>
+    <p>Segundo o autor, entre as características das pessoas com inteligência emocional estão:</p>
+    <p> Percepção do que estão sentindo e o porquê;
+        Facilidade em se relacionar e interpretar emoções nos outros;
+        Capacidade de lidar com pressão e superar situações frustrantes;
+        Automotivação e inspiração aos outros;
+        Empatia, saber ouvir e comunicar-se de forma assertiva;
+        Reconhecer fraquezas e potencialidades.</p>
+    <br>
+    <h2>Como lidar com as emoções? Confira 7 dicas</h2>
+    <p>Nos tópicos anteriores, vimos a importância de lidar com as emoções de um modo funcional. No entanto, como colocar isso em prática? Para isso, é necessário treino. Na lista abaixo, separamos 7 hábitos úteis nessa caminhada. Confira:</p>  
+    <br>
+    <h2>1. Identifique as Suas Emoções</h2>
+    <p>Quando sentir uma emoção intensa, tente colocá-la em palavras. Pergunte-se sempre diante de um estado emocional desconhecido: qual é o melhor termo que o define? É alegria, raiva ou ansiedade? Você pode consultar uma lista de emoções, caso tenha dificuldade. Depois, observe como você se comporta quando está vivenciando determinada emoção. Tente enxergar padrões. Por exemplo, o que você faz quando está ansioso. </p>
+    <p>Isto é um passo importante para o seu autoconhecimento, pois você descobre seus modos de enfrentamento mais frequentes, atentando para a funcionalidade (ou não) deles.</p>
+    <br>
+    <h2>2. Permita-se Sentir Emoções Negativas</h2>
+    <p>As emoções negativas fazem parte da vida, e devem ser vivenciadas. Elas também têm funções positivas. Por exemplo, a culpa pode motivá-lo a fazer o que é realmente importante para você, ou reparar relações. Já a ansiedade pode fazer com que você se prepare melhor para uma prova ou desafio. Em Gestão da Emoção, o psiquiatra Augusto Cury coloca:</p>
+    <p>“Temos de entender que não é possível ter uma emoção linear, plenamente estável. Drama e comédia, sorrisos e lágrimas, sucessos e fracassos alternam-se na vida de todo ser humano, o que nos leva a experimentar uma flutuabilidade inevitável. (…) Ser emocionalmente saudável não é ser alegre sempre, mas preservar o máximo prazer de viver; não é ser destituído de ansiedade, e sim gerenciá-la para experimentar a tranquilidade tanto quanto possível; não consiste em não se deixar ser abarcado pelas preocupações e pelo humor triste, mas navegar nas águas da emoção para não sucumbir às tormentas” (CURY, 2015, p.80; destaque nosso)</p>
+    <p>Portanto, não fuja da experiência de emoções negativas. Vivencie-as e busque expressá-las. Ao reconhecer que a vida é uma sucessão de estados emocionais positivos e negativos, você adquire resiliência, e um relacionamento mais saudável com o seu mundo interno. É claro que, emoções negativas em excesso e fora de contexto — por exemplo, sentir uma tristeza enorme diante de uma pequena adversidade — atrapalham sua vida. Desse modo, devem ser tratadas com ajuda especializada.</p>
+    <br>
+    <h2>3. Busque Formas de Expressar Suas Emoções</h2>
+    <p>Depois de identificar e validar as suas emoções, você pode buscar formas de expressá-las. Para isso, existem diversos caminhos, como:</p>
+    <p> Escrever sobre as suas emoções;
+        Aceitar as respostas corporais sem julgamentos — ou seja, permitir-se chorar, por exemplo;
+        Praticar esportes;
+        Fazer atividades artísticas, como pintura, dança, música e artesanato;
+        Contar o que você está sentindo para alguém; entre outros.</p>
+    <p>O importante é que você encontre aquilo que funciona melhor para você, e que permita uma “descarga” de suas emoções.</p>
+    <br>
+    <h2>4. Tente entender o que aconteceu</h2>
+    <p>Quais eventos desencadearam uma certa emoção? O que você pensou sobre a situação que a originou? Você pode fazer um pequeno esquema em um papel ou no celular, com o evento, seus pensamentos, a emoção experimentada, e seu comportamento subsequente.</p>
+    <p>Em seguida, pergunte-se: a sua interpretação foi acurada? Existem outros pontos de vista possíveis para aquela situação? E a sua maneira de se comportar foi funcional? Quais seriam outras reações plausíveis?</p>
+    <p>Tudo isso dá contexto às suas emoções, e faz com que você conheça melhor seu modo de funcionamento.</p>
+    <br>
+    <h2>5. Comunique de forma assertiva o que você está sentindo</h2>
+    <p>Fale de forma honesta sobre o que você está sentindo às outras pessoas. Parte importante de lidar bem com as emoções é reconhecê-las e validá-las, comunicando-as aos outros. Sendo assim, permita-se ser vulnerável diante de amigos, familiares e parceiros. As emoções são informações importantes sobre o seu mundo interno. Por isso, não tente ignorá-las ou fingir que não as tem. Afinal, isso não fará com que elas sumam.</p>
+    <p>Faz parte da vida ter necessidades emocionais, como, por exemplo, cuidado, carinho e afeto. O caminho para garantir relações que as supram é reconhecendo-as, validando-as e, principalmente, falando sobre elas com os outros.</p>
+    <br>
+    <h2>6. Coloque as coisas em perspectiva</h2>
+    <p>Já sentiu uma emoção negativa e pensou que ela nunca mais passaria? Ao pensar nisso, você provavelmente intensificou este estado emocional, ficando mais tenso. Para evitar os pensamentos irrealistas, que originam emoções negativas, considere tentar colocar as coisas em perspectiva. Isto é, buscar outros pontos de vista.</p>
+    <p>Na prática, quando experienciar emoções negativas tente se perguntar: O que eu posso fazer para lidar com elas? O pensamento que as originou é de fato baseado na realidade?</p>
+    <br>
+    <h2>7. Busque ajuda especializada</h2>
+    <p>Se você tem dificuldade frequente em lidar com as suas emoções, busque ajuda especializada. A nossa vida emocional é complexa e, por vezes, fica pesado lidar com ela sozinho, o que traz muito sofrimento.</p>
+    <p>Por isso, procure especialistas no assunto, como psicólogos e psiquiatras. Eles te darão um suporte, ajudando-o a atravessar um momento difícil. Dentro da psicologia, existem diversas abordagens a respeito da subjetividade humana, com teorias distintas. Elas vão embasar as técnicas e intervenções aplicadas no consultório.</p>
+    <p>Dessa forma, você pode fazer uma pesquisa e encontrar um profissional com a abordagem que combine com você! É importante que você se sinta livre para falar sobre suas emoções e se sinta bem acolhido pelo profissional, estabelecendo uma boa relação terapêutica.Esperamos que você tenha gostado deste artigo sobre como lidar com as emoções.</p>
+</center></div>
+    <br><br><br><br><br>
+    <p><footer><center>fontes: <a href="https://conteudo.saraivaeducacao.com.br/saude/como-lidar-com-as-emocoes/">Link</a></center></footer></p>
+
+
+    <script>
+        function toggleAudioPlayer() {
+         var audioPlayer = document.getElementById("audioPlayer");
+         audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+     }
+     
+     </script>
+     
+     
+     
+     <script>
+       function toggleModo() {
+         var body = document.body;
+         body.classList.toggle("dark-mode");
+         atualizarIcone();
+     }
+     
+     function atualizarIcone() {
+         var modoToggle = document.getElementById("modoToggle");
+         var body = document.body;
+     
+         // Use um ícone de lua para representar o modo noturno
+         var iconeLua = "🌜";
+     
+         // Use um ícone de sol para representar o modo diurno
+         var iconeSol = "🌞";
+     
+         // Alterne entre os ícones com base no modo atual
+         modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+     }
+     
+     </script>
+     
+     
+     <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    </footer>
