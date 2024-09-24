@@ -1,0 +1,313 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color: white;
+    }
+  
+    .login{
+      float: right;
+    }
+
+  </style>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Quem somos nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Funcionalidades</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suporte</a>
+              </li>
+            <li>  
+                <a class="nav-link active" aria-current="page" href="perfil2.html">Voltar</a>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  
+    
+</nav>
+
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+<style>
+  body{
+    background: linear-gradient(to right, #c3a8eb,#126cd2);
+}
+
+.container{
+   width: 300px;
+   height: 340px;
+   
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 4%;
+    box-shadow: 0px 0px 4px #777;
+    align-items: center;
+    
+}
+
+.emoji{
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 0px 0px 4px #555;
+}
+.mood{
+    text-align:center;
+    margin: 0px 0px 20px px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mood2{
+    text-align:center;
+    font-size: 25px;
+}
+.emoji-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    max-width: 400px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+
+}
+.btn btn-success{
+    color: green;
+    background-color: green;
+    border-bottom: green;
+}
+.link2{
+    color: #ffffff;
+    font-size: medium;
+text-decoration: none;
+}
+</style>
+
+
+<br><br><br><br>
+
+
+    <center>
+        <p>
+            <div class="alinhar">
+                <div class="container">
+                    <form >
+                        <!-- Input hidden para enviar o nome do emoji escolhido -->
+                        <input type="hidden" id="emojiName" name="emojiName" value="">
+                        <!-- O emoji escolhido é exibido aqui -->
+                        <p class="mood2" id="mood2">O que você está sentindo?</p>
+                        <div class="emoji" id="emoji">😄</div>
+                        <p class="mood" id="mood">Alegria</p>
+                        <!-- Controle deslizante -->
+                        <input type="range" min="1" max="12" name="emocao" class="emoji-slider" id="range">
+                       
+                      </form>
+                      <a href="perguntas.html"> <button class="btn btn-primary">Confirmar</button></a>
+                </div>  
+            </div>
+            
+        </p>
+        
+    </center>
+<br><br>
+    <center>  <p style="font-family: 'Open Sans';font-size:  20px; ; padding: 15 px;" id="encouragementMessage"></p></center>
+
+    <script>
+    
+
+
+      function toggleColorPicker() {
+          var colorPicker = document.getElementById("colorPicker");
+          colorPicker.style.display = (colorPicker.style.display === "none" || colorPicker.style.display === "") ? "block" : "none";
+      }
+      
+      function changeColor(color) {
+          // Lógica para mudar a cor conforme necessário
+          document.body.style.backgroundColor = color;
+      }
+      
+      function changeGradient() {
+          // Lógica para mudar para um gradiente, se necessário
+          document.body.style.background = "linear-gradient(to right, white, orange, yellow, green, blue, indigo, violet)";
+      }
+      
+      
+          </script>
+      
+          <script>
+           document.addEventListener('DOMContentLoaded', function() {
+          // Configuração inicial para o linear-gradient
+          document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+      });
+      
+      function changeGradient() {
+          document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+      }
+      
+      function changeColor(color) {
+          document.body.style.background = color;
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+          // Carrega a cor salva no localStorage ao carregar a página
+          const savedColor = localStorage.getItem('selectedColor');
+          if (savedColor) {
+              document.body.style.background = savedColor;
+          }
+      });
+      
+      function changeGradient() {
+          const gradient = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+          document.body.style.background = gradient;
+          // Salva a cor no localStorage
+          localStorage.setItem('selectedColor', gradient);
+      }
+      
+      function changeColor(color) {
+          document.body.style.background = color;
+          // Salva a cor no localStorage
+          localStorage.setItem('selectedColor', color);
+      }
+          </script>
+
+<script>
+
+
+
+
+  var emoji = document.getElementById('emoji');
+  var mood = document.getElementById('mood');
+  var sliderValue = document.getElementById('range');
+
+  
+
+  sliderValue.oninput = function () {
+      var value = this.value;
+      var name;
+
+      if (value == 1) {
+          emoji.innerHTML = '😡';
+          mood.innerHTML = 'Raiva';
+          name = "emocao";
+          id="raiva";
+          displayEncouragement('Respire fundo e tente se acalmar. Você vai superar isso!');
+      } else if (value == 2) {
+          emoji.innerHTML = '🤢';
+          mood.innerHTML = 'Nojo';
+          name = "emocao";
+          id="nojo";
+          displayEncouragement('Mantenha a calma logo vai passar o desconforto.');
+      } else if (value == 3) {
+          emoji.innerHTML = '😱';
+          mood.innerHTML = 'Medo';
+          name = "emocao";
+          id="medo";
+          displayEncouragement('É normal sentir medo, respire fundo e enfrente um passo de cada vez.');
+      } else if (value == 4) {
+          emoji.innerHTML = '😫';
+          mood.innerHTML = 'Cansaço';
+          name = "emocao";
+          id="cancaco";
+          displayEncouragement('Você é forte, respire é só mais um dia!');
+      } else if (value == 5) {
+          emoji.innerHTML = '😢';
+          mood.innerHTML = 'Tristeza';
+          name = "emocao";
+          id="tristeza";
+          displayEncouragement('Vai ficar tudo bem! estamos com você sempre!');
+      } else if (value == 6) {
+          emoji.innerHTML = '🤔';
+          mood.innerHTML = 'Reflexivo';
+          name = "emocao";
+          id="reflexivo";
+          displayEncouragement('Pessoas inteligentes sempre pensativas.');
+      } else if (value == 7) {
+          emoji.innerHTML = '😯';
+          mood.innerHTML = 'Surpresa';
+          name = "emocao";
+          id="surpresa";
+          displayEncouragement('Nem tudo conseguimos prever né? logo tudo estará em ordem.');
+      } else if (value == 8) {
+          emoji.innerHTML = '😌';
+          mood.innerHTML = 'Tranquilidade';
+          name = "emocao";
+          id="tranquilidade";
+          displayEncouragement('Paz, Amor e calma te definem nesse momento.');
+      } else if (value == 9) {
+          emoji.innerHTML = '😎';
+          mood.innerHTML = 'Confiança';
+          name = "emocao";
+          id="confianca";
+          displayEncouragement('Ser confiante é tão bom!');
+      } else if (value == 10) {
+          emoji.innerHTML = '😄';
+          mood.innerHTML = 'Alegria';
+          name = "emocao";
+          id="alegria";
+          displayEncouragement('Alegria! muitas coisas boas estão por vir!');
+      } else if (value == 11) {
+          emoji.innerHTML = '😌';
+          mood.innerHTML = 'Satisfação';
+          name = "emocao";
+          id="satisfacao";
+          displayEncouragement('Que bom quando tudo está em ordem.');
+      } else if (value == 12) {
+          emoji.innerHTML = '🙏';
+          mood.innerHTML = 'Gratidão';
+          name = "emocao";
+          id="gratidao";
+          displayEncouragement('Praticar a gratidão traz paz interior. Obrigado por reconhecer o positivo em sua vida.');
+      }
+  };
+
+  function displayEncouragement(message) {
+      var encouragementMessage = document.getElementById('encouragementMessage');
+      encouragementMessage.innerHTML = message;
+  }
+</script>
+
+
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

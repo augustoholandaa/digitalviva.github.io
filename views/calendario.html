@@ -1,0 +1,430 @@
+<HEader>
+    <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DIGITAL VIVA</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+  </head>
+  
+  </HEader>
+  <nav>
+    
+  <style>
+    .custom-navbar{
+      background-color:white;
+    }
+  
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+  text-decoration: none;
+  
+  }
+  
+  
+  #backButton{width: 55px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(178, 146, 208);
+  
+  
+  
+  }
+  
+  </style>
+  
+  <body>
+    
+  <nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+  
+        </td>
+        <td>
+          <a href="perfil2.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+  </nav>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <script src="./js/main.js" defer></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: linear-gradient(to right, #c3a8eb,#126cd2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+}
+
+.centralizador {
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 20px;
+}
+
+header h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(95, 98, 207)
+}
+
+.cabecalho header {
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 30px 10px;
+}
+
+header .icone span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+header .icone span:hover {
+    background: rgb(95, 98, 207);
+}
+
+header span:last-child {
+    margin-right: -10px;
+}
+
+.calendario ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.diasDaSemana ul li {
+    width: calc(100% / 7);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(95, 98, 207)
+}
+
+.dias li {
+    font-size: 18px;
+    width: calc(100% / 7);
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.calendario .dias li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendario .dias li:hover::before {
+    background: #f2f2f2;
+}
+
+.calendario .dias li.ativo::before {
+    background: rgb(95, 98, 207);
+}
+
+.dias li.desativo {
+    color: rgb(190, 188, 188);
+}
+
+.dias li.ativo {
+    color: rgb(255, 248, 248);
+}
+
+@media screen and (max-width: 1024px) {
+    .calendario header{
+        font-size: 8px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 50%;
+        height: 470px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calendario header{
+        font-size: 8px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 70%;
+        height: 470px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho header{
+        font-size: 12px;
+    }
+
+    .dias li {
+        font-size: 13px;
+    }
+
+    .centralizador {
+        width: 100%;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+
+    header .icone span {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cabecalho header{
+        font-size: 10px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 100%;
+        height: 450px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 12px;
+    }
+
+    header .icone span {
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+    }
+}
+
+    </style>
+    
+    <div class="blur"></div>
+    <div class="centralizador">
+        <div class="cabecalho">
+            <header>
+                <h1 class="mes&ano" id="mes&ano"></h1>
+                <div class="icone" id="icone">
+                    <span class="material-symbols-outlined" id="antes">chevron_left</span>
+                    <span class="material-symbols-outlined"
+                        id="depois">chevron_right</span>
+                </div>
+            </header>
+        </div>
+        <div class="calendario">
+            <div class="diasDaSemana" id="diasDaSemana">
+                <ul>
+                    <li>Dom</li>
+                    <li>Seg</li>
+                    <li>Ter</li>
+                    <li>Qua</li>
+                    <li>Qui</li>
+                    <li>Sex</li>
+                    <li>Sáb</li>
+                </ul>
+            </div>
+            <ul class="dias" id="dias"></ul>  
+        </div>
+    </div>
+
+
+
+    <script>
+    
+
+
+        function toggleColorPicker() {
+            var colorPicker = document.getElementById("colorPicker");
+            colorPicker.style.display = (colorPicker.style.display === "none" || colorPicker.style.display === "") ? "block" : "none";
+        }
+        
+        function changeColor(color) {
+            // Lógica para mudar a cor conforme necessário
+            document.body.style.backgroundColor = color;
+        }
+        
+        function changeGradient() {
+            // Lógica para mudar para um gradiente, se necessário
+            document.body.style.background = "linear-gradient(to right, white, orange, yellow, green, blue, indigo, violet)";
+        }
+        
+        
+            </script>
+        
+            <script>
+             document.addEventListener('DOMContentLoaded', function() {
+            // Configuração inicial para o linear-gradient
+            document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+        });
+        
+        function changeGradient() {
+            document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+        }
+        
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Carrega a cor salva no localStorage ao carregar a página
+            const savedColor = localStorage.getItem('selectedColor');
+            if (savedColor) {
+                document.body.style.background = savedColor;
+            }
+        });
+        
+        function changeGradient() {
+            const gradient = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+            document.body.style.background = gradient;
+            // Salva a cor no localStorage
+            localStorage.setItem('selectedColor', gradient);
+        }
+        
+        function changeColor(color) {
+            document.body.style.background = color;
+            // Salva a cor no localStorage
+            localStorage.setItem('selectedColor', color);
+        }
+            </script>
+
+    <script>
+        const mesAtual = document.getElementById('mes&ano'),
+diaTag = document.querySelector('#dias'),
+iconeAntesDepois = document.querySelectorAll('.icone span');
+
+var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+let data = new Date(),
+mes = data.getMonth(),
+ano = data.getFullYear();
+
+function displayData() {
+    let diaAtual = new Date(ano, mes + 1, 0).getDate(),
+    primeirosDiasMes = new Date(ano, mes, 1).getDay(),
+    ultimosDiasMesAnterior = new Date(ano, mes, 0).getDate(),
+    primeirosDiasProxMes = new Date(ano, mes, diaAtual).getDay();
+    let liDia = "";
+    
+    for (let i = primeirosDiasMes; i > 0; i--) {
+        let anterior = i === data.getDate(); 
+        liDia += `<li class="desativo">${ultimosDiasMesAnterior - i + 1}</li>`;
+    }
+    
+    for (let i = 1; i <= diaAtual; i++) {
+        let hoje = i === data.getDate() && mes === new Date().getMonth() && ano === new Date().getFullYear() ? 'ativo' : '';
+        liDia += `<li class="${hoje}">${i}</li>`;
+    }
+
+    for (let i = primeirosDiasProxMes; i < 6; i++) {
+        let anterior = i === data.getDate(); 
+        liDia += `<li class="desativo">${i - primeirosDiasProxMes + 1}</li>`;
+    }
+    
+    mesAtual.innerText = `${meses[mes]} ${ano}`;
+    diaTag.innerHTML = liDia;
+} 
+
+displayData();
+
+iconeAntesDepois.forEach( icone => {
+    icone.addEventListener("click", () => {
+        mes = icone.id === "antes" ? mes - 1 : mes + 1;
+
+        if (mes < 0 || mes > 11) {
+            data = new Date(ano, mes),
+            mes = data.getMonth(),
+            ano = data.getFullYear();
+        } else {
+            data = new Date();
+        }
+        displayData();
+    })
+})
+    </script>
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

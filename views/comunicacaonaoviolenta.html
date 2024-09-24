@@ -1,0 +1,319 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Audio ainda não disponivel</figcaption>
+        
+    </figure>
+    
+</div>
+
+
+
+        
+<h2>O que é Comunicação Não-Violenta (CNV)?</h2>
+<br>
+<p>A Comunicação Não-Violenta é uma prática que tem como objetivo gerar mais compreensão e colaboração nas relações pessoais, profissionais e até com nós mesmos.</p>
+<p>A Comunicação Não-Violenta foi sistematizada pelo psicólogo Marshall Rosenberg, que escolheu esse nome inspirado nos trabalhos de resistência não-violenta de Gandhi e Martin Luther King.</p>
+<p>Em seu livro “Comunicação Não-Violenta - Técnicas para aprimorar relacionamentos pessoais e profissionais”, Marshall Rosenberg diz:</p>
+<p>“Embora possamos não considerar ‘violenta’ a maneira que falamos, nossas palavras não raro induzem à mágoa e à dor, seja para os outros, seja para nós mesmos.”</p>
+<p>No processo de sintetização da Comunicação Não-Violenta, Marshall aprofundou a investigação do papel da linguagem na forma como nos relacionamos, e identificou padrões que nos afastam uns dos outros e da compaixão, que ele chamou de linguagem alienante da vida. Esses padrões estão em hábitos como julgar, rotular, criticar e diagnosticar.</p>
+<p>Essa investigação o levou também a identificar os 4 componentes da Comunicação Não-Violenta.</p>
+<br>
+<h2>Os 4 componentes da CNV:</h2>
+<p>◉ Observação (saber ouvir sem julgamento)</p>
+<p>Rosenberg orienta que a primeira ação é observar o que está acontecendo. Nessa etapa, devemos questionar se a mensagem recebida (ações ou falas) acrescenta algo positivo.</p>
+<p>Nesse sentido, observe sem julgamento e sem juízo de valor. Devemos compreender o que nos agrada ou desagrada diante de determinada situação.</p>
+<p>◉ Sentimentos (indagar sem fazer avaliações)</p>
+<p>O próximo passo é entender qual sentimento a situação desperta. Marshall sugere que os sentimentos sejam nomeados (medo, raiva, felicidade, mágoa, entre outros).</p>
+<p>Esse pilar diz que é importante se permitir ser vulnerável para resolver conflitos e, assim, compreender a diferença entre o que sentimos e o que pensamos ou interpretamos.</p>
+<p>◉ Necessidades (compreender ao invés de usar estratégias)</p>
+<p>Ao compreender qual sentimento a situação despertou, é a vez de reconhecer quais necessidades estão ligadas a ele.</p>
+<p>Para Rosenberg, quando alguém expressa suas carências, a possibilidade delas serem atendidas é muito maior. Além disso, a consciência dos componentes anteriores devem vir de uma análise pessoal clara e honesta.</p>
+<p>◉ Pedidos (argumentar ao invés de dar ordens)</p>
+<p>Os pedidos, último componente da CNV, são a expressão de como gostaríamos de atender nossas necessidades. Quando fazemos pedidos, damos ao outro a oportunidade de colaborar com o que é importante para nós.</p>
+<br>
+<h2>Como praticar a Comunicação Não-Violenta?</h2>
+<p>O primeiro passo, e mais importante, é entender qual a sua intenção. A prática da CNV tem o intuito de gerar conexão e colaboração mútua.</p>
+<p>Essa estrutura foi criada por Marshall Rosenberg para melhorar a qualidade dos relacionamentos.</p>
+<p>Confira como implementar esses componentes para se expressar e ouvir de forma clara diante do outro.</p>
+<p>há 3 principais áreas de aplicação da CNV:</p>
+<p>◉ Autoconexão.</p> 
+<p>◉ Empatia.</p>
+<p>◉ Expressão honesta.</p>
+<br>
+<h2>Importância e benefícios no ambiente de trabalho</h2>
+<p>No contexto das empresas, a Comunicação Não Violenta tem uma série de finalidades. As principais aplicações são:</p>
+<p>◉ promoção da empatia;</p>
+<p>◉ Construção de ambientes mais acolhedores;</p>
+<p>◉ Mediação e resolução pacífica de conflitos;</p>
+<p>◉ Abertura ao diálogo;</p>
+<p>◉ Redução de agressões (verbais e físicas);</p>
+<p>◉ Promover e manter relacionamentos saudáveis;</p>
+<p>◉ Fortalecimento de uma cultura baseada na parceria e trabalho em equipe;</p>
+<p>◉ Gestão otimizada de equipes.</p>
+<p>A CNV também é aplicada em outras áreas, por exemplo, no auxílio em tratamentos de recuperação após traumas e casos de dependência e/ou para humanizar o atendimento oferecido por profissionais de saúde.</p>
+<p>Assim, conseguimos entender as possíveis razões que permeiam suas atitudes. A prática da CNV também oferece outros benefícios, como:</p>
+<p>◉ Mostra o impacto das nossas ações na vida das outras pessoas. Um exemplo é quando alguém sente que está sendo acusado ou cobrado. Então, reage na defensiva;</p>
+<p>◉ Auxilia na hora de entender as emoções, pois nos faz refletir a respeito do que incomoda, gerando reações mais pacíficas;</p>
+<p>◉ Em uma empresa, a CNV permite que todos - colaboradores e lideranças - se manifestem em um ambiente acolhedor;</p>
+<P>◉ Comunicação Não Violenta não suprime debates ou discussões, mas faz com que o grupo chegue a um consenso com mais facilidade.</P>
+<br>
+<h2>Dicas para exercitar a Comunicação Não Violenta</h2>
+<p>Após conhecer os pilares da CNV e diferentes maneiras de usá-la em situações cotidianas, é fundamental saber como praticar essa técnica.</p>
+<p>Falamos em “prática”, porque a comunicação empática precisa ser exercitada diariamente em qualquer tipo de relação.</p>
+<p>Selecionamos 10 dicas para exercitar a Comunicação Não Violenta. Aplique cada uma delas gradualmente e perceba mudanças em sua forma de se relacionar com o mundo:</p>
+<p>1. Busque se comunicar com todos sem prejulgamentos ou definições sobre “certo” ou “errado”;</p>
+<p>2. Não meça as atitudes do outro pela sua régua;</p>
+<p>3. Procure nunca se comparar, nem comparar as pessoas com as quais você convive com outros indivíduos;</p>
+<p>4. Elimine qualquer tom acusatório da sua fala. Isso provoca reações defensivas e inviabiliza a comunicação;</p>
+<p>5. Explique suas necessidades com calma e clareza;</p>
+<p>6. Questione-se sobre possíveis rótulos colocados em você e nas pessoas ao seu redor;</p>
+<p>7. Se enfrentar um conflito ou precisar mediar uma situação divergente, procure pontos em comum entre você e as outras pessoas. A solução pode vir das afinidades;</p>
+<p>8. Coloque-se no lugar do outro, sempre que possível;</p>
+<p>9. Manifeste seus pontos vulneráveis quando se sentir confortável para tal. Isso vai lhe aproximar das outras pessoas. Afinal, todos temos suscetibilidades;</p>
+<p>1o. Pondere com calma e exercite a empatia sempre, principalmente antes de responder a uma ofensa ou ataque. Não dê réplicas no mesmo tom.</p>
+
+
+
+<footer><center>fontes: <a href="https://www.institutocnvb.com.br/single-post/comunica%C3%A7%C3%A3o-n%C3%A3o-violenta-cnv-o-que-%C3%A9-e-como-praticar">Link</a></center></footer>       
+<footer><center>fontes: <a href="https://blog.solides.com.br/comunicacao-nao-violenta/">Link</a></center></footer>
+
+<br><br><br>
+
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

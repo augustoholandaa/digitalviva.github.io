@@ -1,0 +1,418 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Audio ainda não disponivel</figcaption>
+        
+    </figure>
+    
+</div>
+
+
+<center><p>Obs: Este é um trabalho exclusivo e feito com a colaboração conjunta da psicologa Andrea Ramos.</p></center>
+ 
+
+<center><h2>Psicologia Positiva</h2></center>
+<br>
+<h2>O que é a Psicologia Positiva?</h2>
+<p>Psicologia positiva é o estudo da felicidade. A psicologia tradicionalmente se concentra no estudo das disfunções – pessoas com doença mental ou outras questões – e como tratá-las.</p>
+<p>A psicologia positiva, em contraste, é um campo que examina como pessoas comuns podem se tornar mais felizes e mais satisfeitas.</p>
+<p>A abordagem científica da psicologia positiva estuda pensamentos, sentimentos e comportamentos humanos com foco em pontos fortes em vez de fraquezas, construindo o bem na vida em vez de apenas consertar o mal.</p>
+<p>É o estudo científico “daquilo que faz a vida valer a pena”. Sua abordagem a pensamentos, sentimentos e comportamentos possui foco nas forças de uma pessoa — em vez de focar em suas fraquezas.</p>
+<br>
+<h2>Como surgiu a Psicologia Positiva?</h2>
+<p>A maioria dos registros aponta que o movimento nasceu entre os anos 1997 e 1998, quando estudos do psicólogo Martin Seligman começaram a ser divulgados pelo mundo.</p>
+<p>Isso aconteceu assim que Seligman assumiu a presidência da American Psychological Association (APA), que possui representatividade dentro e fora dos Estados Unidos.</p>
+<p>A partir de pesquisas quantitativas, Seligman e outros estudiosos iniciaram a investigação do que está por trás do bem-estar ou felicidade, focando em aspectos positivos da existência humana, a exemplo das virtudes.</p>
+<p>Assim, o desenvolvimento e aprimoramento de qualidades positivas passou a integrar o movimento.</p>
+<br>
+<h2>Quem é Martin Seligman?</h2>
+<p>Martin Seligman é psicólogo e professor da Universidade da Pensilvânia, nos Estados Unidos, com mais de 30 anos de prática clínica.</p>
+<p>Ele ficou conhecido como idealizador da Psicologia Positiva, graças ao lançamento de pesquisas e conteúdos como o artigo “Positive Psychology: an introdution“.</p>
+<p>Escrito em parceria com o psicólogo húngaro Mihaly Csikszentmihalyi, o artigo trata sobre o flow, um estado de auto foco e concentração, sendo um dos marcos da história da Psicologia Positiva, pois cita a necessidade de uma abordagem centrada nas virtudes humanas.</p>
+<br>
+<h2>Qual O Objetivo Da Psicologia Positiva?</h2>
+<p>“O bem-estar não pode existir apenas na sua cabeça: ele é uma combinação de sentir-se bem e efetivamente ter sentido, bons relacionamentos e realização. O modo como escolhemos nossa trajetória de vida é maximizando todos esses cinco elementos”.</p>
+<p>O trecho acima, retirado do livro “Florescer: Uma nova compreensão sobre a natureza da felicidade e do bem-estar“, de Martin Seligman, resume o objetivo da Psicologia Positiva.</p>
+<br>
+<h2>O Que é Felicidade Para A Psicologia Positiva?</h2>
+<p>No âmbito da Psicologia Positiva, a felicidade recebeu o nome de bem-estar subjetivo, já que os elementos que compõem esse estado são  diferentes de pessoa para pessoa.</p>
+<p>Martin Seligman, o bem-estar subjetivo é definido pela ausência de depressão e presença de estados cognitivos e emoções positivas.</p>
+<p>Em outras palavras, podemos considerar que a felicidade é um estado de plenitude em que corpo e mente estão saudáveis, levando em consideração que, para a Organização Mundial da Saúde:</p>
+<p>“Saúde é o completo estado de bem-estar físico, mental e social, e não simplesmente a ausência de enfermidade“.</p>
+<p>Pensando em um modo para avaliar e medir a felicidade, foi revelado um resultado de uma pesquisa em nível mundial Conforme  o artigo Felicidade e bem-estar na visão da psicologia positiva, de Letícia George Camalionte e Marina Pereira Rojas Boccalandro.</p>
+<br>
+<h2>Em base no livro : O poder da força de Caráter </h2>
+<p>Este livro tem como finalidade ensinar e contribuir com o aprendizado das forças de caráter  que você possui, sabendo utilizar seus elementos positivos para uma mudança e melhoria podendo contribuir na sua sensação de bem-estar pessoal, em seus relacionamentos e até mesmo em sua comunidade.</p>
+<p>Traços que são admirados e respeitados pelos outros são chamados de força de caráter.</p>
+<p>Caráter é a parte da sua personalidade que outras pessoas tendem a admirar, respeitar e prezar.</p>
+<p>Pesquisas mostram que a maioria de nós ficamos desligados do trabalho que está fazendo, fazemos os movimentos presos a rotina e não somos tão produtivos quanto poderíamos ser.</p>
+<p>Mas a pesquisa também sugere que, quando  aproveitamos ao máximo nossas forças de caráter e as usamos em nosso trabalho, tornamo-nos mais felizes profissionalmente, mais produtivos e mais engajados no que estamos fazendo.</p>
+<p>Estudos científicos mostram que as forças de caráter nos ajudam a gerenciar problemas de modo mais eficaz, por exemplo, usá-las pode gerar a ter menos estresse e mais facilidade de lidar com o local de trabalho.</p>
+<br>
+<h2>O que é o modelo PERMA?</h2>
+<p>É uma estrutura para a felicidade e o bem-estar baseada em cinco elementos: emoção positiva, engajamento, relacionamentos positivos, propósito e realização.</p>
+<p>Segundo Seligman, esses cinco fatores ajudam as pessoas a trabalhar em direção a uma vida de realização, felicidade e significado.</p>
+<h2>As 5 dimensões do modelo PERMA</h2>
+<p>Ao desenvolver o modelo PERMA, Seligman selecionou cinco componentes motivadores que contribuem para o bem-estar das pessoas. Abaixo, apresentamos mais sobre eles:</p>
+<p>1. Positive emotions (Emoção Positiva)</p>
+<p>Felicidade ou bem-estar depende daquilo que sentimos sobre nós mesmos, conquistas, sucessos e nosso momento de vida, concorda?</p>
+<p>Por isso, manter estados emocionais positivos é ponto crucial para ser feliz. Além dos sentimentos, em si, esse fator se refere aos pensamentos, pois eles estão por trás das emoções – sejam elas positivas ou negativas.</p>
+<p>Confira algumas maneiras de construir emoções positivas em seu dia a dia:</p>
+<p>◉ Passe tempo com as pessoas de quem gosta;</p>
+<p>◉ Invista em hobbies e atividades criativas que você goste;</p>
+<p>◉ Ouça músicas e/ou assista filmes e série inspiradores;</p>
+<p>◉ Reflita sobre as coisas pelas quais você é grato e o que está indo bem em sua vida.</p>
+<br>
+<p>2. Engagement (Engajamento)</p>
+<p>Assim como as emoções positivas, esse é um fator subjetivo, que depende de motivação interna e autorresponsabilidade.</p>
+<p>O engajamento pode ser descrito como o nível de envolvimento com as atividades, em especial com aquelas que fazem parte da rotina.</p>
+<p>Confira abaixo algumas formas de desenvolver engajamento:</p>
+<p>◉ Participe de atividades que você realmente ama, nas quais você perde a noção do tempo quando as faz;</p>
+<p>◉ Pratique viver o momento, mesmo durante as atividades diárias ou tarefas mundanas;</p>
+<p>◉ Passe um tempo na natureza , observando, ouvindo e absorvendo o que acontece ao seu redor;</p>
+<p>◉ Identifique e aprenda sobre seus pontos fortes e faça coisas nas quais você se destaca.</p>
+<br>
+<p>3. Positive relationships (Relacionamentos Positivos)</p>
+<p>Diz respeito à forma como nos relacionamos com as outras pessoas, que também deve priorizar os aspectos positivos.</p>
+<p>Vale a pena se cercar de quem nos dá força,por quem ajuda  aprimorar nossas qualidades, por pessoas que nos impulsionam rumo ao nosso sonho, propósito, ensine a ressignificar situações que não somam para a vida de maneira fluida.</p>
+<p>Confira algumas formas de construir relacionamentos positivos:</p>
+<p>◉ Junte-se a um grupo que lhe interesse e no qual você se sinta acolhido e valorizado.</p>
+<p>◉ Faça perguntas às pessoas que você não conhece bem para saber mais sobre elas;</p>
+<p>◉ Crie amizades com pessoas que você conhece;</p>
+<p>◉ Entre em contato com pessoas com quem você não fala ou se conecta há algum tempo.</p>
+<br>
+<p>4. Meaning (propósito)</p>
+<p>A busca por um propósito é algo que vem desde os primórdios da humanidade.</p>
+<p>E isso não acontece à toa: pertencer e/ou servir a algo maior que nós mesmos ajuda a se concentrar no que é realmente importante diante de desafios ou adversidades.</p>
+<p>Esse propósito de vida pode ser buscado por meio de uma profissão, uma causa social ou política, um empreendimento criativo ou uma crença religiosa/espiritual.</p>
+<p>Ou seja, pode ser encontrado de diversas formas e ter significados diferentes para cada pessoa.</p>
+<p>Um propósito de vida é guiado por valores pessoais, e as pessoas que relatam tê-lo vivem mais e têm maior satisfação com a vida.</p>
+<p>Confira algumas formas de construir/encontrar um propósito:</p>
+<p>◉ Envolva-se em uma causa ou organização que seja importante para você;</p>
+<p>◉ Experimente atividades novas e criativas para encontrar coisas com as quais você se conecta;</p>
+<p>◉ Pense em como você pode usar suas paixões para ajudar os outros;</p>
+<p>◉ Passe tempo de qualidade com as pessoas que você gosta.</p>
+<br>
+<p>5. Accomplishments/achievements (realizações)</p>
+<p>As realizações, sejam pessoais ou profissionais, contribuem para o bem-estar porque permitem que as pessoas olhem para suas vidas com um sentimento de orgulho.</p>
+<p>Essa sensação de realização é resultado do trabalho para alcançar seus objetivos e da automotivação para terminar o que você se propôs a fazer. Ela inclui os conceitos de perseverança e paixão por atingir metas.</p>
+<p>O autodesenvolvimento e o bem-estar vêm quando a realização está ligada a uma motivação interna de trabalhar em direção a algo que se deseja.</p>
+<p>Confira algumas formas de alcançar suas realizações:</p>
+<p>◉ Defina metas que sejam específicas, mensuráveis, alcançáveis, realistas e com prazo determinado;</p>
+<p>◉ Reflita sobre os sucessos do passado;</p>
+<p>◉ Procure maneiras criativas de comemorar suas conquistas.</p>
+<br>
+<h2>Como Aplicar A Psicologia Positiva No Trabalho?</h2>
+<p>No trabalho, é interessante aplicar um dos conceitos que formam a Psicologia Positiva, conhecido como tríade da felicidade.</p>
+<p>Essa é uma das principais técnicas de aplicação da disciplina, que prega a busca por uma vida prazerosa, vida engajada e vida significativa.</p>
+<p>A vida prazerosa descreve a busca por estados emocionais positivos.</p>
+<p>Não significa, necessariamente, reduzir emoções negativas, já que, muitas vezes, elas são respostas automáticas a situações adversas.</p>
+<p>Conforme explica Helder Kamei, psicólogo e master coach, a vida prazerosa, no trabalho, se traduz num clima organizacional positivo, em que prevalecem sensações de bem-estar.</p>
+<p>Nesse sentido, é preciso abandonar práticas que aumentem a pressão, estresse, medo, insegurança e desânimo.</p>
+<p>Ter uma vida engajada faz referência às atividades desempenhadas, que devem levar a um estado de plenitude e concentração (ou, flow), que pode ser alcançado através de atividades que ofereçam motivação.</p>
+<br>
+<h2>Qual A Importância Da Psicologia Positiva?</h2>
+<p>A Psicologia Positiva tem desempenhado um papel extremamente importante no mundo atual, pois atua com foco na promoção da saúde mental e consequentemente na qualidade de vida.</p>
+<p>Diversas pesquisas científicas relacionam o bem-estar mental à prevenção de doenças, já que estados emocionais negativos podem colaborar para o desenvolvimento ou agravo de patologias.</p>
+<p>A depressão, considerada o mal do século 21, tem forte influência desses fatores, mas até doenças físicas têm relação com pessimismo, ódio, mágoa, entre outros estados emocionais prejudiciais.</p>
+<p>Além de promover a satisfação e otimismo, a Psicologia Positiva sugere a adoção de comportamentos mais saudáveis, reforçando a prevenção de patologias relacionadas a condutas.</p>
+<p>Desse modo, quem utiliza as estratégias ou recomendações desta ciência têm menos chances de desenvolver fatores de risco para diabetes e doenças cardiovasculares, por exemplo, pois se alimenta de forma equilibrada e pratica atividade física.</p>
+<br>
+<h2>Quais os benefícios da psicologia positiva para as empresas?</h2>
+<p>Um dos grandes desafios das empresas hoje é cultivar e enriquecer a sua cultura organizacional.</p>
+<p>Essa é a base para uma experiência do colaborador de sucesso e que contribua não apenas para o seu ciclo de vida na empresa, mas também para seus resultados.</p>
+<br>
+<h2>Como a psicologia positiva pode impactar nas organizações?</h2>
+<p>Sua aplicação pode ter grande efeito na cultura de um negócio, servindo de base para que o bem-estar dos seus funcionários e gestores demais stakeholders  seja uma bandeira da instituição — um estandarte ! propostas que todos conheçam e pratiquem.</p>
+<p>Ao focar nas emoções e experiências positivas, as empresas podem sensibilizar e mobilizar suas equipes e lideranças, aumentando a criatividade e potencializando o foco e principalmente, atingindo as metas estabelecidas.</p>
+<p>Considerando que conhecendo as forças e virtudes do time corporativo, a empresa poderá realizar o que ainda é uma novidade no Brasil o Job crafting, que é exatamente a recolocação ou colocação do funcionário na atividade laboral, na qual ele tenha uma maior habilidade quanto ao seu propósito de vida e o significado que tem para ele.</p>
+<p>Vale ressaltar que tais práticas podem incentivar os funcionários a adotarem um estilo de vida mais saudável, com maior presença de exercícios físicos e o uso do mindfulness (é a prática de se concentrar completamente no presente o que traz benefícios muito além do ambiente de trabalho.</p>
+<br>
+<h2>Famosa Autora da Psicologia Positiva</h2>
+<p>Uma grande autora da psicologia positiva é Angela Lee Duckworth, (nascida em 1970) é uma acadêmica, psicóloga e autora científica popular americana.</p>
+<p>Ela também é fundadora e ex-CEO do Character Lab, uma organização sem fins lucrativos cuja missão é promover a ciência e a prática do desenvolvimento humano.</p>
+<p>Ela também é autora do livro “Garra: O Poder da Paixão e da Perseverança”, obra que fala da importância da capacidade de perseverar e produzir resultados além do puro talento, da sorte ou das eventuais derrotas.</p>
+<br>
+<p>Levantando-se após falhar</p>
+<p>Como você se fortalece após um fracasso? Um método útil é lembrar-se de seus outros pontos fortes, especialmente aqueles relacionados ao comportamento, hábito ou resultado que você está tentando alcançar. Aqui estão algumas outras dicas:</p>
+<br>
+<p>Aceite o que você sente</p>
+<p>Não tente esconder o fato de que você se sente mal após um fracasso. Ignorar emoções negativas não é o mesmo que superá-las.</p>
+<p>Em vez disso, permita-se reconhecer que se sente mal por falhar e, em seguida, pense a uma maneira de superar isso.</p>
+<br>
+<p>Lembre-se de que é normal falhar</p>
+<p>Qualquer coisa em que você queira ser bom precisará praticar. Claro, às vezes falha significa que você não é bom em alguma coisa.</p>
+<p>Com a prática, é possível melhorar em tal aspecto. Se você desistir depois de falhar, não irá praticar e não se tornará bom naquilo.</p>
+<p>Abrace uma mentalidade positiva</p>
+<p>E é aqui que entram a psicologia positiva e a consideração positiva incondicional. Depois de aceitar o que sente sobre o fracasso, volte a ficar bem consigo mesmo.</p>
+<p>Pense em resultados positivos futuros. Ou pense no lado bom do momento, mesmo com o fracasso.</p>
+<br>
+<p>Aplicando psicologia positiva à sua vida</p>
+<p>Hoje, mais indivíduos começaram a procurar maneiras de aplicar a psicologia positiva às suas próprias vidas.</p>
+<p>Técnicas para aplicar conceitos positivos de psicologia podem funcionar tanto para pessoas saudáveis ​​quanto para pessoas que sofrem de depressão.</p>
+<p>Se você quiser tentar adicionar os benefícios da psicologia positiva à sua vida, comece com estes exercícios.</p>
+<br>
+<p>Visualize partes engraçadas do seu dia</p>
+<p>Aconteceu alguma coisa engraçada com você hoje? Ou você observou algo engraçado? Anotá-las ou retransmiti-las para outra pessoa. Uma boa risada pode elevar seu ânimo.</p>
+<p>Você também pode tentar encontrar as partes engraçadas das experiências negativas. Se você é capaz de rir de si mesmo, pode ajudá-lo a se sentir melhor.</p>
+<br>
+<p>Mantenha um diário</p>
+<p>Os diários fornecem dados. Você não precisa ser um cientista para utilizar os dados para encontrar correlações positivas entre sua felicidade e o seu cotidiano.</p>
+<p>Quando começar a acompanhar o que acontece e como você se sente durante o seu dia, poderá estabelecer as conexões que lhe permitirão concentrar suas energias nas áreas da sua vida que oferecem mais recompensa.</p>
+<br>
+<p>Visualize seu futuro positivo</p>
+<p>Você pode fazer isso escrevendo um diário ou apenas sentando e imaginando um cenário futuro. Seja qual for o método escolhido, pense em uma meta para a qual está trabalhando e imagine as maneiras específicas pelas quais terá sucesso.</p>
+<p>Isso pode ajudá-lo a formular um plano com etapas e soluções.</p>
+<br>
+<p>Acompanhe seus atos de bondade</p>
+<p>Conte quantas vezes por dia você faz algo legal para outra pessoa. Não faça isso para esperar algo de volta.</p>
+<p>Como vimos, a psicologia positiva é importante para todas as pessoas. Ela nos ajuda a encontrar em nós mesmos nossos pontos positivos.</p>
+<p>Diante disso, você não apenas pode aliviar seus sintomas como também pode ajudar as pessoas a conseguirem seus objetivos e a obterem ainda o bem-estar.</p>
+<p>Que tal ter uma vida com bem-estar pleno, saber lidar com os desafios, em sintonia com seus propósitos de vida?</p>
+<p>Então sugerimos procurar um processo psicoterapêutico com base nesta ciência que olha o melhor que você possui e te auxilia com técnicas e exercícios que potencializam o seu melhor.</p>
+<p>Porque psicoterapêutico? Porque precisa ser com um psicólogo. Tem pessoas com pós em psicologia positiva, mas não é psicólogo. Ao invés de ajudar, faz um estrago maior.</p>
+
+<br><br><br><br><br><br>
+<footer><center>fontes: <a href="https://www.totvs.com/blog/carreiras/psicologia-positiva/">Link</a></center></footer>
+<footer><center>fontes: <a href="https://fia.com.br/blog/psicologia-positiva/">Link</a></center></footer>
+<footer><center>fontes: <a href="https://www.vittude.com/blog/psicologia-positiva-o-que-e-e-porque-importa/">Link</a></center></footer>
+
+<br><br><br>
+
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

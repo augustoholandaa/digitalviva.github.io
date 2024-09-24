@@ -1,0 +1,320 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Episódio 1</figcaption>
+        <audio controls>
+            <source src="../img/Direitos do trabalhador.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    <figure>
+        <figcaption>Episódio 2</figcaption>
+        <audio controls>
+            <source src="../img/Direitos do trabalhador 2.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    
+</div>
+
+<center><div class="divtexto">
+
+    <h2>Direitos Trabalhistas previstos na CLT</h2>
+    <br>
+
+    <h2>1. Jornada de Trabalho</h2>
+    <p>De acordo com a Constituição Federal de 1988, a jornada de trabalho de um colaborador não deve ultrapassar</p>
+    <p>oito horas diárias e 44 horas semanais. Tudo o que for trabalhado além destes limites é considerado como hora extra</p>
+    <p>e deverá ser remunerado como tal.</p>
+    <br>
+    <h2>2. Hora Extra</h2>
+    <p>De acordo com o artigo 59 da CLT legislação permite que sejam feitas até 2 horas extras diárias, desde que estas horas sejam realizadas por razão imperiosa,</p>
+    <p>motivos de força maior ou conclusão de serviços inadiáveis que possam acarretar prejuízos.</p>
+    <p>De acordo com as leis trabalhistas, existe um limite de horas extras para a jornada de trabalho, além de limite para hora extra.</p>
+    <p>Hoje, é definido até 8 horas de trabalho por dia, com mínimo de 1 hora de almoço. Sendo até 44 horas trabalhadas semanais.</p>
+    <p>Hora extra nada mais é do que exceder as horas de trabalho.</p>
+    <p>E é permitido exceder até 2 horas de trabalho por dia, completando, no máximo, 10 horas semanais extras.</p>
+    <p>O pagamento de hora extra deve ser de, ao menos, 50% a mais do valor normal da hora do colaborador.</p>
+    <p>Quando esta for realizada à noite, em feriados ou aos finais de semana, o colaborador deverá receber os respectivos adicionais.</p>
+    <br>
+    <h2>3. Intervalos para descanso: Intrajornada e entre jornadas</h2>
+    <p>A CLT também garante aos trabalhadores uma série de intervalos. Eles se dedicam ao descanso entre uma jornada e outra.</p> 
+    <p>Também, em meio à jornada para fins de descanso e alimentação.</p>
+    <p>O intervalo entre jornadas deve ser, no mínimo, de 11 horas. Já o intrajornada, dentro dela,</p> 
+    <p>somente existe para jornadas acima de 4 horas diárias. Até 6 horas há direito ao intervalo de 15 minutos,</p>
+    <p>enquanto a partir de 6 horas ele é de ao menos 1 hora.</p>
+    <p>Contudo, a CLT também permite aos sindicatos estipularem intervalo intrajornada inferior ao previsto na lei.</p> 
+    <p> Entretanto, dispõe que nesse caso as jornadas superiores a 6 horas terão no mínimo 30 minutos de intervalo.</p>
+    <br>
+    <h2>4. FGTS</h2>
+    <p>Mensalmente, a empresa é obrigada a depositar o equivalente a 8% do valor do salário bruto do colaborador.</p> 
+    <p>Esse depósito tem o objetivo de que o colaborador consiga receber esta reserva nos momentos em que mais precisa:</p>
+    <p>no caso de ser demitido ou para usar na compra da casa própria, por exemplo.</p>
+    <br>
+    <h2>5. 13º Salário</h2>
+    <p>Todo colaborador registrado tem direito a receber o 13º salário. Este é pago em duas parcelas.</p>
+    <p>O valor será integral se o colaborador trabalhou pelo período de um ano ou parcial, caso tenha trabalhado mesmo de um ano.</p>
+    <p>De acordo com as leis em relação ao cálculo do décimo terceiro  mencionadas acima, o colaborador recebe um salário líquido a mais como benefício.
+    <p>O pagamento é feito em duas parcelas:</p>
+    <p>◉ A primeira deve ser paga até o último dia útil de novembro;</p>
+    <p>◉ A segunda até o dia 20 de dezembro.</p>
+    <p>Quando esse dia cai em um final de semana, o pagamento deverá ser antecipado. As parcelas não são divididas igualmente.</p>
+    <p>O valor do décimo terceiro salário é integral ao colaborador que trabalhou o ano todo na empresa (1/12 avos).</p>
+    <p>Para os colaboradores que entraram na empresa com o ano em andamento, o valor é pago proporcionalmente.</p>
+    <br>
+    <h2>6. Vale Transporte</h2>
+    <p>O colaborador que utiliza transporte público para ir e voltar da empresa pode solicitar o vale-transporte.O benefício deve ser dado no primeiro dia útil mês.</p>
+    <p>Observar os direitos dos colaboradores pode evitar desgastes desnecessários para a empresa.</p>
+    <br>
+    <h2>7. Adicional de insalubridade e periculosidade</h2>
+    <p>A CLT também garante aos empregados que trabalham expostos a ambientes perigosos ou insalubres o recebimento de um valor extra mensalmente</p> 
+    <p>que visa compensar o desgaste físico e à ameaça sob a qual se arriscaram</p>
+    <p>A periculosidade é definida nos artigos 193 a 196 da CLT e na NR nº 16 do MTE. O adicional é correspondente a 30% sobre o salário-base. Note-se bem a diferença:</p>
+    <p>enquanto o adicional de insalubridade (10 a 40%) é pago sobre o salário mínimo, o adicional de periculossssssidade (30%) é pago sobre o salário-base do empregado.</p>
+    
+<br><br><br>
+<p><a href="quiz8" target="_blank" rel="noopener noreferrer"><img src="../img/aquiz.png" alt="" width="90px" style="border-radius: 30%;"></a> Responda o Quiz </p>
+
+
+
+
+    <br><br><br><br><br><br>
+    <footer><center>fontes: <a href="https://www.oitchau.com.br/blog/os-principais-direitos-trabalhistas-garantidos-pela-clt/">Link</a></center></footer>
+</center></div>
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>
