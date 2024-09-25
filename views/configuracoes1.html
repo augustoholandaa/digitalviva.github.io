@@ -1,0 +1,339 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 55px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="../index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="perfil2.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+  body{
+    background: linear-gradient(to right, #c3a8eb,#126cd2);
+}
+
+@media (min-width: 768px) {
+    .foto {
+      width: 5%;
+     
+      border-radius: 100px;
+      padding: 8px;
+    }
+  }
+
+  /* Estilo para dispositivos móveis (tela com largura igual ou menor que 768px) */
+  @media (max-width: 768px) {
+    .foto {
+      width: 15%;
+      border-radius: 100px;
+      
+    }
+  }
+
+  #divnoticiasdireita {
+    float: right;
+    width: 75%;
+ }
+ .espacamentoLista {
+    height: 30px;
+ }
+ .linhacolunaesquerda {
+    width: 80%;
+    height: 3px;
+    background-color: #51C951;
+    border: 0px;
+    margin-left: 0;
+ }
+ .textoNoticias {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ }
+ .tamanho1{
+    text-align: start;
+ }
+
+ 
+
+.imagens2{
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+.imagens3{
+   width: 90px;
+   height: 90px;
+   border-radius: 100%;
+}
+body{
+   background: linear-gradient(to right, #c3a8eb,#126cd2);
+ }
+
+.link{
+   color: rgb(0, 0, 0);
+   font-size: medium;
+text-decoration: none;
+}
+
+#sair{
+   float: right;
+}
+
+.botao1{
+   border-radius: 100%;
+}
+.posicao{
+   justify-content: space-between;
+}
+
+#backButton2{width: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+ 
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(107, 69, 177)
+
+
+
+
+}
+</style>
+
+<div >
+    <p><center><img class="foto" src="../img/foto.png" alt=""> <figcaption ><span id="meuParagrafo1">Seu nome</span></p></figcaption></center></p>
+</div>
+
+
+
+<div class="tamanho1">
+    <table class="posicao">
+       <tr>
+        <td>
+            <div id="divnoticiasesquerda" class="espacamentoLista">
+                <h4 class="textoNoticias" id="topo">Configurações</h4>
+                <hr class="linhacolunaesquerda">
+                
+                <p class="textoNoticias">
+                    <a class="link" href="#">
+                        <h4>
+                            <p> Nome: <span id="meuParagrafo1"></span></p>
+                            <button id="backButton2" onclick="mostrarCaixa('meuParagrafo1')">Alterar🖍</button>
+                            <div id="caixaAlteracao_meuParagrafo1" style="display:none;">
+                                <input type="text" id="novoTexto_meuParagrafo1" placeholder="Digite o novo texto">
+                                <button id="backButton2" onclick="alterarTexto('meuParagrafo1')">Salvar</button>
+                            </div>
+                        </h4>
+                    </a>
+                </p>
+                
+                <p class="textoNoticias">
+                    <a class="link" href="#">
+                        <h4>
+                            <p> E-mail: <span id="meuParagrafo2">seuemail@gmail.com</span></p>
+                            <button id="backButton2" onclick="mostrarCaixa('meuParagrafo2')">Alterar🖍</button>
+                            <div id="caixaAlteracao_meuParagrafo2" style="display:none;">
+                                <input type="text" id="novoTexto_meuParagrafo2" placeholder="Digite o novo texto">
+                                <button id="backButton2" onclick="alterarTexto('meuParagrafo2')">Salvar</button>
+                            </div>
+                        </h4>
+                    </a>
+                </p>
+                
+                <p class="textoNoticias">
+                    <a class="link" href="#">
+                        <h4>
+                            <p> Gênero: <span id="meuParagrafo3">Seu gênero</span></p>
+                            <button id="backButton2" onclick="mostrarCaixa('meuParagrafo3')">Alterar🖍</button>
+                            <div id="caixaAlteracao_meuParagrafo3" style="display:none;">
+                                <input type="text" id="novoTexto_meuParagrafo3" placeholder="Digite o novo texto">
+                                <button id="backButton2" onclick="alterarTexto('meuParagrafo3')">Salvar</button>
+                            </div>
+                        </h4>
+                    </a>
+                </p>
+            
+                <p class="textoNoticias">
+                    <a class="link" href="#">
+                        <h4>
+                            <p> Idade: <span id="meuParagrafo4">Sua idade</span></p>
+                            <button id="backButton2" onclick="mostrarCaixa('meuParagrafo4')">Alterar🖍</button>
+                            <div id="caixaAlteracao_meuParagrafo4" style="display:none;">
+                                <input type="text" id="novoTexto_meuParagrafo4" placeholder="Digite o novo texto">
+                                <button id="backButton2" onclick="alterarTexto('meuParagrafo4')">Salvar</button>
+                            </div>
+                        </h4>
+                    </a>
+                </p>
+                <br><br>
+                <p>
+                    <a href="" id="backButton2">Mudar senha🔏</a>
+                </p>
+            
+
+                <script>
+    
+
+
+                    function toggleColorPicker() {
+                        var colorPicker = document.getElementById("colorPicker");
+                        colorPicker.style.display = (colorPicker.style.display === "none" || colorPicker.style.display === "") ? "block" : "none";
+                    }
+                    
+                    function changeColor(color) {
+                        // Lógica para mudar a cor conforme necessário
+                        document.body.style.backgroundColor = color;
+                    }
+                    
+                    function changeGradient() {
+                        // Lógica para mudar para um gradiente, se necessário
+                        document.body.style.background = "linear-gradient(to right, white, orange, yellow, green, blue, indigo, violet)";
+                    }
+                    
+                    
+                        </script>
+                    
+                        <script>
+                         document.addEventListener('DOMContentLoaded', function() {
+                        // Configuração inicial para o linear-gradient
+                        document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+                    });
+                    
+                    function changeGradient() {
+                        document.body.style.background = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+                    }
+                    
+                    function changeColor(color) {
+                        document.body.style.background = color;
+                    }
+                    
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Carrega a cor salva no localStorage ao carregar a página
+                        const savedColor = localStorage.getItem('selectedColor');
+                        if (savedColor) {
+                            document.body.style.background = savedColor;
+                        }
+                    });
+                    
+                    function changeGradient() {
+                        const gradient = 'linear-gradient(to right, #c3a8eb, #126cd2)';
+                        document.body.style.background = gradient;
+                        // Salva a cor no localStorage
+                        localStorage.setItem('selectedColor', gradient);
+                    }
+                    
+                    function changeColor(color) {
+                        document.body.style.background = color;
+                        // Salva a cor no localStorage
+                        localStorage.setItem('selectedColor', color);
+                    }
+                        </script>
+
+
+                <script>
+                    // Função para mostrar a caixa de alteração
+                    function mostrarCaixa(id) {
+                        var caixaAlteracao = document.getElementById(`caixaAlteracao_${id}`);
+                        caixaAlteracao.style.display = 'block';
+                    }
+            
+                    // Função para alterar o texto e salvar no localStorage
+                    function alterarTexto(id) {
+                        var caixaAlteracao = document.getElementById(`caixaAlteracao_${id}`);
+                        var novoTextoInput = document.getElementById(`novoTexto_${id}`);
+                        var paragrafo = document.getElementById(id);
+            
+                        paragrafo.innerText = novoTextoInput.value;
+            
+                        // Salva o novo texto no localStorage
+                        localStorage.setItem(id, novoTextoInput.value);
+            
+                        // Oculta a caixa de alteração
+                        caixaAlteracao.style.display = 'none';
+                    }
+            
+                    // Função para carregar os valores do localStorage
+                    function carregarValoresLocalStorage() {
+                        for (var i = 1; i <= 4; i++) {
+                            var id = `meuParagrafo${i}`;
+                            var paragrafo = document.getElementById(id);
+                            var valorSalvo = localStorage.getItem(id);
+            
+                            if (valorSalvo) {
+                                paragrafo.innerText = valorSalvo;
+                            }
+                        }
+                    }
+            
+                    // Carrega os valores ao carregar a página
+                    carregarValoresLocalStorage();
+                </script>
+
+    <script src="partials/bootstrap/bootstrap.min.js"></script>
+
+
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

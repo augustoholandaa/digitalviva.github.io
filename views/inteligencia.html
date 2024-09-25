@@ -1,0 +1,278 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="../index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Audio</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - O que é inteligência emocional.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+   
+</div>
+
+<div >
+    <center><div class="divtexto">
+        
+        <h2>O que é inteligência Emocional?</h2>
+
+        <!-- Botão para alternar entre os modos claro e noturno -->
+
+       
+    <br>
+    <p>Inteligência emocional é o nome que se dá ao conjunto de competências relacionadas a lidar com emoções. Mais especificamente, a como (e o quanto) se percebe, processa, compreende e tem habilidade de gerenciá-las.</p>
+    <p>Dentre as competências que a IE compreende, estão, por exemplo, as chamadas soft skills, especialmente conectadas com as características que se “traz” às interações com os outros.</p>
+    <h2>Definições de Alguns Especiacistas</h2>
+    <p>Em sua definição, a dupla Salovey e Mayer explica que IE é “a capacidade de perceber e exprimir a emoção, assimilá-la ao pensamento, compreender e raciocinar com ela, e saber regulá-la em si próprio e nos outros”.</p>
+    <p>O que é inteligência emocional, segundo os dois psicólogos, está muito ligado à quatro domínios básicos: </p>
+    <p>◉  Percepção das emoções: a precisão com que uma pessoa identifica as emoções.</p>
+    <p>◉  Raciocínio por meio das emoções: empregar as informações emocionais para facilitar o raciocínio.</p>
+    <p>◉  Entendimento das emoções: captar variações emocionais nem sempre evidentes e compreender a fundo as emoções (mais sofisticado do que o “identificar” do primeiro domínio).</p>
+    <p>◉  Gerenciamento das emoções: aptidão para lidar com os próprios sentimentos.</p>
+    <h2>O papel de Daniel Goleman</h2>
+    <p>Apesar de não ter introduzido o conceito de IE, Daniel Goleman, psicólogo, escritor e PhD da Universidade de Harvard, é o grande responsável por popularizá-lo. Em 1995, quando atuava como jornalista científico do New York Times, lançou o livro “Inteligência Emocional”, em que traz à tona o embate entre o QE e o QI (Quociente de Inteligência).</p>
+    <p>Com mais de 5 milhões de cópias vendidas no mundo todo e tradução para 40 idiomas, o best-seller impulsionou a atenção das pessoas pelo tema, tornando o conceito acessível a vários segmentos da sociedade. A partir dele, a mídia e outras entidades acadêmicas começaram a explorar ainda mais o assunto.</p>
+    <p>Goleman descreve a inteligência emocional como a capacidade de uma pessoa de gerenciar seus sentimentos, de modo que eles sejam expressos de maneira apropriada e eficaz. Segundo o psicólogo, o controle das emoções é essencial para o desenvolvimento da inteligência de um indivíduo. Seu modelo sobre a IE foca em uma série de competências e habilidades que, de acordo com ele, propiciam melhores desempenhos profissionais – inclusive, como líder.</p>
+    <br><br><br><br><br>
+    
+    <footer><p><center>Fontes: <a href="https://www.napratica.org.br/o-que-e-inteligencia-emocional/">Link</a></center></p></footer>
+    
+    
+    </center></div>
+</div>
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

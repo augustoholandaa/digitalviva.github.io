@@ -1,0 +1,269 @@
+<header>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+<nav>
+  
+<style>
+  .custom-navbar{
+    background-color:rgb(0, 0, 0);
+  }
+
+  #link{
+ color: #0b0c10;
+ font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 55px;
+cursor: pointer;
+box-shadow: 0px 0px 2px rgb(0, 0, 0);
+border: none;
+outline: none;
+padding: 4px;
+border-radius: 5px;
+color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+</style>
+
+<body>
+  
+<nav>
+    
+     
+     
+      
+  </nav>
+
+
+  
+</nav>
+
+<link rel="stylesheet" href="../views/partials/bootstrap/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+<style>
+    body{
+      background-color: rgb(235, 228, 228);
+    }
+  .corpo{
+    padding: 20px;
+  }
+  
+  h1{
+    font-family: 'Open Sans';font-size:  14px;
+  }
+  p{
+    font-family: 'Open Sans';font-size:  18px;
+  }
+  
+  </style>
+
+<style>
+    body {
+        font-family: 'Open Sans';
+    margin: 20px;
+}
+
+#questionnaire {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+#secondButton {
+      display: none; /* Inicialmente, esconde o segundo botão */
+    }
+
+</style>
+<style>
+  
+    /* Cor da barra de rolagem */
+    ::-webkit-scrollbar {
+      background-color: #f1f1f1; /* Cor de fundo da barra de rolagem */
+      
+    }
+    
+    /* Cor da alça da barra de rolagem */
+    ::-webkit-scrollbar-thumb {
+      background-color: #888; /* Cor da alça da barra de rolagem */
+    }
+    
+    /* Cor da barra de rolagem no Firefox */
+    body {
+      scrollbar-color: #f1f1f1 #888;
+    }
+    
+    /* Largura da barra de rolagem no Firefox */
+    body {
+      scrollbar-width: thin; /* Ou auto para usar a largura padrão do navegador */
+    }
+    </style>
+<a href="dass21.html"><button id="backButton">Voltar</button></a>
+
+<a class="navbar-brand" href="../index.html"><img width="100px" src="./img/logo1.png" style="float: right;" alt=""></a>
+<br><br>
+    <center><h1>Após responder tudo, seu resultado será exibido automaticamente abaixo;</h1></center>
+    <br>
+    <div id="questionnaire">
+        <!-- As perguntas serão geradas dinamicamente aqui -->
+    </div>
+<br>
+<center>
+    <button type="button" class="btn btn-outline-secondary" onclick="calculateResults()">Enviar Respostas</button>
+  </center>
+  <br>
+  <div id="results"></div>
+  <br>
+
+  <center>
+    <!-- Segundo botão com ID "secondButton" -->
+    <a href="dass21teste.html" style="text-decoration: none;"><button type="button" id="secondButton" class="btn btn-outline-secondary">Voltar ao inicio</button></a>
+  </center>
+
+  
+
+
+    <script>
+        const questions = [
+    "1. Achei difícil me acalmar",
+    "2. Senti minha boca seca",
+    "3. Não consegui vivenciar nenhum sentimento positivo",
+    "4. Tive dificuldade em respirar em alguns momentos (ex. respiração ofegante, falta de ar, sem ter feito nenhum esforço físico)",
+    "5. Achei difícil ter iniciativa para fazer as coisas",
+    "6. Tive a tendência de reagir de forma exagerada às situações",
+    "7. Senti tremores (ex. nas mãos)",
+    "8. Senti que estava sempre nervoso",
+    "9. Preocupei-me com situações em que eu pudesse entrar em pânico e parecesse ridículo (a)",
+    "10. Senti que não tinha nada a desejar",
+    "11. Senti-me agitado",
+    "12. Achei difícil relaxar",
+    "13. Senti-me depressivo (a) e sem ânimo",
+    "14. Fui intolerante com as coisas que me impediam de continuar o que eu estava fazendo",
+    "15. Senti que ia entrar em pânico",
+    "16. Não consegui me entusiasmar com nada",
+    "17. Senti que não tinha valor como pessoa",
+    "18. Senti que estava um pouco emotivo/sensível demais",
+    "19. Sabia que meu coração estava alterado mesmo não tendo feito nenhum esforço físico (ex. aumento da frequência cardíaca, disritmia cardíaca)",
+    "20. Senti medo sem motivo",
+    "21. Senti que a vida não tinha sentido"
+];
+
+function startQuestionnaire() {
+    const questionnaireDiv = document.getElementById('questionnaire');
+
+    questions.forEach((question, index) => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question');
+        questionDiv.innerHTML = `<p>${question}</p>
+                                 <select id="question${index}">
+                                    <option value="0">Nunca</option>
+                                    <option value="1">Em algum grau</option>
+                                    <option value="2">Em grande parte</option>
+                                    <option value="3">Muito</option>
+                                 </select>`;
+        questionnaireDiv.appendChild(questionDiv);
+    });
+}
+
+function calculateResults() {
+    const responses = [];
+
+     // Após o cálculo, mostra o segundo botão
+     document.getElementById('secondButton').style.display = 'block';
+    
+
+    for (let i = 0; i < questions.length; i++) {
+        const responseValue = parseInt(document.getElementById(`question${i}`).value);
+        responses.push(responseValue);
+    }
+
+    const totalScore = responses.reduce((acc, val) => acc + val, 0);
+
+    // Médias e desvios padrão para cada categoria
+    const stressStats = { mean: 13.68, sd: 10.26 };
+    const anxietyStats = { mean: 6.23, sd: 7.22 };
+    const depressionStats = { mean: 8.06, sd: 8.08 };
+
+    // Calcular as pontuações padronizadas (z-scores)
+    const zScoreStress = (totalScore - stressStats.mean) / stressStats.sd;
+    const zScoreAnxiety = (totalScore - anxietyStats.mean) / anxietyStats.sd;
+    const zScoreDepression = (totalScore - depressionStats.mean) / depressionStats.sd;
+
+    // Função para categorizar os resultados
+    const categorizeResults = (zScore) => {
+        if (zScore < 0.5) return "Normal";
+        if (zScore < 1.5) return "Leve";
+        if (zScore < 3.0) return "Moderado";
+        if (zScore < 4.5) return "Severo";
+        if (zScore < 5.5) return "Extremamente Severo";
+        return "Normal";
+    };
+
+    // Categorizar os resultados para cada categoria
+    const stressCategory = categorizeResults(zScoreStress);
+    const anxietyCategory = categorizeResults(zScoreAnxiety);
+    const depressionCategory = categorizeResults(zScoreDepression);
+
+    // Adicionar mensagem correspondente aos resultados
+    const stressMessage = getResultMessage("Estresse (DASS-21)", stressCategory);
+    const anxietyMessage = getResultMessage("Ansiedade (DASS-21)", anxietyCategory);
+    const depressionMessage = getResultMessage("Depressão (DASS-21)", depressionCategory);
+
+    // Exibir os resultados na página HTML
+    const resultDiv = document.getElementById('results');
+    resultDiv.innerHTML = `<p>${stressMessage}</p>
+                           <p>${anxietyMessage}</p>
+                           <p>${depressionMessage}</p>`;
+}
+
+function getResultMessage(categoryTitle, category) {
+    // Adicione suas mensagens correspondentes aqui
+    const messages = {
+        "Normal": "Você está indo bem!",
+        "Leve": "Você está enfrentando algumas dificuldades, mas são leves.",
+        "Moderado": "Você está enfrentando dificuldades moderadas. Considere procurar apoio, se necessário.",
+        "Severo": "Você está enfrentando dificuldades significativas. Recomendamos buscar ajuda profissional.",
+        "Extremamente Severo": "Os desafios que você enfrenta são extremamente severos. Busque ajuda profissional imediatamente."
+    };
+
+    const message = messages[category];
+
+    return `${categoryTitle}: ${category}, ${message}`;
+}
+
+
+
+document.addEventListener('DOMContentLoaded', startQuestionnaire);
+
+    </script>
+
+
+<script src="../views/partials/bootstrap/bootstrap.min.js"></script>
+<footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>

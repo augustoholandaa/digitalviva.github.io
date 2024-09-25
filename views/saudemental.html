@@ -1,0 +1,277 @@
+<header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL VIVA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon4.png" style="border-radius: 100px;" type="image/x-icon">
+</head>
+
+</header>
+
+<nav>
+    
+<style>
+    .custom-navbar{
+      background-color:white;
+    }
+
+    #link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+
+}
+
+
+#backButton{width: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgb(57, 54, 54);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+background-color: rgb(178, 146, 208);
+
+
+
+}
+
+  </style>
+  
+  <body>
+    
+<nav>
+      
+        <a class="navbar-brand" href="../index.html"><img width="150px" src="./img/logo1.png" alt=""></a>
+        
+        
+    </nav>
+    <br>
+    <table>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          <a href="conteudos.html"><button id="backButton">Voltar</button></a>
+        </td>
+      </tr>
+    </table>
+  
+    
+</nav>
+
+<style>
+   
+body{
+    text-align: center;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-family: arial;
+   text-align: justify;
+}
+
+
+  /* Estilos para o modo noturno */
+  body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .divtexto.dark-mode {
+        border: 1px solid #fff; /* Adicione bordas brancas para destacar a área de texto */
+    }
+
+    p.dark-mode {
+        color: #eee;
+    }
+
+    h2.dark-mode {
+        color: #eee;
+    }
+
+    /* Estilos para o botão de alternância */
+    .modoToggleContainer {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+       
+    }
+
+    input[type="checkbox"] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 52px;
+        height: 27px;
+        background: rgb(112, 109, 109);
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        left: -50px;
+        transition: background-color 0.3s;
+    }
+
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+
+    input:checked + label {
+        background-color: rgb(142, 142, 240);
+    }
+
+    input:checked + label::after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 45px;
+    }
+
+
+
+
+    .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.floating-btn:hover {
+    background-color: #2980b9;
+}
+
+.audio-player {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+   
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player audio {
+    margin-bottom: 10px;
+}
+
+
+
+</style>
+
+<div class="modoToggleContainer">
+    <input type="checkbox" id="modoToggle" onclick="toggleModo()">
+    <label for="modoToggle"></label>
+</div>
+
+
+<button class="floating-btn" onclick="toggleAudioPlayer()">Play Audio</button>
+<div class="audio-player" id="audioPlayer">
+    <figure>
+        <figcaption>Audio</figcaption>
+        <audio controls>
+            <source src="../img/Rayanne Rodrigues - Como está sua saúde mental.m4a" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </figure>
+    
+</div>
+
+
+
+        
+    <h2>Como está sua Saúde Mental?</h2>
+<br>
+<p>Já parou para pensar no assunto? Alguma vez refletiu se os seus pensamentos, ideias e sentimentos estão em harmonia? Sabe a diferença entre saúde mental e doença ou transtorno mental?</p>
+<p>Em geral, os termos causam confusão. Mas basta lê-los com cuidado, pois são autoexplicativos. O primeiro refere-se à saúde e, os outros, à ausência dela. Não existe, porém, uma definição oficial para o conceito de saúde mental, de acordo com a Organização Mundial de Saúde (OMS).</p>
+<p>O termo está relacionado à forma como uma pessoa reage às exigências, desafios e mudanças da vida e ao modo como harmoniza suas ideias e emoções. Diariamente, vivenciamos uma série de emoções, boas ou ruins, mas que fazem parte da vida:</p>
+<p>Alegria, Felicidade, Tristeza, Raiva, Frustração, Satisfação etc.</p>
+<p>Como lidamos com essas emoções é o que determina como está a qualidade da nossa saúde mental.</p>
+<p>Assim, tê-la ou alcançá-la está muito longe da ausência de transtornos mentais. O desequilíbrio emocional facilita o surgimento de doenças mentais. Podemos dizer que a saúde mental contempla, entre tantos fatores, a nossa capacidade de sensação de bem-estar e harmonia, a nossa habilidade em manejar de forma positiva as adversidades e conflitos, o reconhecimento e respeito dos nossos limites e deficiências, nossa satisfação em viver, compartilhar e se relacionar com os outros -algo muito maior e anterior ao início dos transtornos mentais.</p>
+<p>Manter a saúde mental, no entanto, não é tão simples quanto parece, principalmente nos dias de hoje. São muitos problemas…</p>
+<p>◉ ESTRESSE, BRIGAS, ATRASOS</p>
+<p>◉ ADVERTÊNCIAS, DOENÇAS, INCAPACIDADES</p>
+<p>◉ LIMITAÇÕES, FALTA DE FAMÍLIA (OU EXCESSO DE FAMÍLIA), POUCO DINHEIRO (OU MUITO DINHEIRO)</p>
+<div class="letrabranca">
+<p>Diversos são os fatores que podem influenciar negativamente a nossa saúde mental.</p>
+<h2>Uma grande fonte de sofrimento atualmente é o trabalho.</h2>
+<p>Dedicamos grande parte do tempo de nossas vidas ao nosso emprego e nem sempre isso é prazeroso ou satisfatório. A alta taxa de desemprego no País, a baixa remuneração, más condições de trabalho, falta de planejamento profissional, entre tantos outros, são questões que levam ao aumento significativo de diversos transtornos.</p>
+<p>Alguns dos mais comuns transtornos mentais associados ao trabalho são a SÍNDROME DE BURNOUT, o transtorno de estresse pós-traumático, a síndrome da fadiga crônica, a neurose profissional e a síndrome do esgotamento profissional.</p>
+
+
+<p><a href="quiz6" target="_blank" rel="noopener noreferrer"><img src="../img/aquiz.png" alt="" width="90px" style="border-radius: 30%;"></a> Responda o Quiz </p>
+
+<footer><p><center>Fontes: <a href="https://www.einstein.br/saudemental">Fontes</a> </center></p></footer>
+
+<br><br><br>
+
+<script>
+    function toggleAudioPlayer() {
+     var audioPlayer = document.getElementById("audioPlayer");
+     audioPlayer.style.display = (audioPlayer.style.display === "none" || audioPlayer.style.display === "") ? "block" : "none";
+ }
+ 
+ </script>
+ 
+ 
+ 
+ <script>
+   function toggleModo() {
+     var body = document.body;
+     body.classList.toggle("dark-mode");
+     atualizarIcone();
+ }
+ 
+ function atualizarIcone() {
+     var modoToggle = document.getElementById("modoToggle");
+     var body = document.body;
+ 
+     // Use um ícone de lua para representar o modo noturno
+     var iconeLua = "🌜";
+ 
+     // Use um ícone de sol para representar o modo diurno
+     var iconeSol = "🌞";
+ 
+     // Alterne entre os ícones com base no modo atual
+     modoToggle.labels[0].textContent = body.classList.contains("dark-mode") ? iconeSol : iconeLua;
+ }
+ 
+ </script>
+ 
+ 
+ <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+</footer>
